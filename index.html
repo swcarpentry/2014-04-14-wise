@@ -1,0 +1,36 @@
+---
+layout: bootcamp
+root: .
+venue: Lawrence Berkeley National Laboratory
+address: Berkeley, California
+country: United-States
+humandate: Apr 14-15, 2014
+humantime: 9:00 am - 4:30 pm
+startdate: 2014-04-14
+enddate: 2014-04-15
+latlng: 34.413963,-119.848947
+registration: open
+instructor: ["Katy Huff"]
+contact: admin@software-carpentry.org
+---
+{% include bootcamps/instructors.html %}
+{% include bootcamps/what.html %}
+{% include bootcamps/who.html %}
+{% include bootcamps/requirements.html %}
+{% include bootcamps/python.html %}
+{% include bootcamps/contact.html %}
+
+<hr/>
+
+<h2>Setup</h2>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/overview-bash.html %}
+    {% include setup/overview-editor.html %}
+  </div>
+  <div class="span6">
+    {% include setup/overview-git.html %}
+    {% include setup/overview-python.html %}
+  </div>
+</div>
