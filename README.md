@@ -12,7 +12,7 @@ Instructors:
 
 Schedule:
 ----------------------------------------------
-               April 14 (Monday)              | 
+April 14 (Monday) |                 |         | 
 ----------------------------------------------
 Time  | Beginner   | Intermediate | Advanced  |
 9:00  |  Set-up    | Set-up       | Set-up    |
@@ -24,7 +24,7 @@ Time  | Beginner   | Intermediate | Advanced  |
 15:00 |            |              |           |
 16:00 |            |              |           |
 ----------------------------------------------
-              April 14 (Tuesday)              | 
+April 14 (Tuesday) |              |           | 
 ----------------------------------------------
 Time  | Beginner   | Intermediate | Advanced  |
 9:00  |  Set-up    | Set-up       | Set-up    |
