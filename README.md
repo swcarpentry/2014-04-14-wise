@@ -6,8 +6,8 @@ Women in Science and Engineering bootcamp at LBL April 2014
 This repository hosts material to be used in the April 2014 bootcamp at the 
 Lawrence Berkeley National Laboratory. 
 
-Instructors: Katy Huff, Cindee Madison, Tracy Teal, Azalee Bostroem, and Molly 
-Gibson
+Instructors: Katy Huff, Cindee Madison, Azalee Bostroem, Jessica Kerr, Molly 
+Gibson, and Suzanne Kiihne.
 
 
 
