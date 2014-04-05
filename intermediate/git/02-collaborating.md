@@ -23,13 +23,13 @@ github?
 ----------
 
 GitHub is a site where many people store their open (and closed) source
-code repositories. It provides tools for browsing, collaborating on and
+code repositories. It provides tools for browsing, collaborating on, and
 documenting code. Your home institution may have a repository hosting
 system of it's own. To find out, ask your system administrator.  GitHub,
 much like other forge hosting services (
 [launchpad](https://launchpad.net), [bitbucket](https://bitbucket.org),
 [googlecode](http://code.google.com), [sourceforge](http://sourceforge.net)
-etc.) provides :
+etc.), provides :
 
 -   landing page support 
 -   wiki support
@@ -43,13 +43,14 @@ etc.) provides :
 
 **NOTE** Public repos have public licences **by default**. If you don't
 want to share (in the most liberal sense) your stuff with the world, pay
-github money for private repos, or host your own.
+github money for private repos, or host your own. 
+You can get free private repos from github through association with a unversity.
 
 
 github pasword 
 -----------------
 
-Setting up github at first requires a github user name and password.
+Setting up github account requires a github user name and password.
 Please take a moment to [create a free one](https://github.com/signup/free)
 (if you want to start paying, you can add that to your account some other
 day). 
@@ -87,7 +88,7 @@ but the remote repository on GitHub doesn't contain any files yet:
 <img src="http://raw.github.com/thehackerwithin/berkeley/master/git/img/git-freshly-made-github-repo.png" alt="Freshly-Made GitHub Repository" />
 
 The next step is to connect the two repositories.
-We do this by making the GitHub repository a [remote](../gloss.html#repository-remote)
+We do this by making the GitHub repository a [remote](../../gloss.html#repository-remote)
 for the local repository.
 The home page of the repository on GitHub includes
 the string we need to identify it:
@@ -103,16 +104,16 @@ go into the local `planets` repository,
 and run this command:
 
 ~~~
-$ git remote add origin https://github.com/vlad/planets
+$ git remote add origin https://github.com/viorica/planets.git
 ~~~
 
-(using your GitHub ID instead of `vlad`).
+(using your GitHub ID instead of `viorica`).
 We can check that the command has worked by running `git remote -v`:
 
 ~~~
 $ git remote -v
-origin   https://github.com/vlad/planets.git (push)
-origin   https://github.com/vlad/planets.git (fetch)
+origin   https://github.com/viorica/planets.git (push)
+origin   https://github.com/viorica/planets.git (fetch)
 ~~~
 
 There's nothing magic about the name `origin`,
@@ -128,7 +129,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
 Writing objects: 100% (9/9), 821 bytes, done.
 Total 9 (delta 2), reused 0 (delta 0)
-To https://github.com/vlad/planets
+To https://github.com/viorica/planets
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 ~~~
@@ -142,13 +143,13 @@ Our local and remote repositories are now in this state:
  You may see a `-u` option used with `git push`.
  This tells Git what [branch](../../gloss.html#branch) to use
  in the repository you're pushing to.
- We discuss branches and branching in our intermediate-level lessons.
+ We will discuss branches and branching if we have time at the end of this section.
 
 We can pull changes from the remote repository to the local one as well:
 
 ~~~
 $ git pull origin master
-From https://github.com/vlad/planets
+From https://github.com/viorica/planets
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 ~~~
@@ -159,11 +160,11 @@ If someone else had pushed some changes,
 though,
 this command would download them to our local repository.
 We can simulate this by going to another directory&mdash;for example, `/tmp`&mdash;and
-[cloning](../gloss.html#repository-clone) our GitHub repository:
+[cloning](../../gloss.html#repository-clone) our GitHub repository:
 
 ~~~
 $ cd /tmp
-$ git clone https://github.com/vlad/planets.git
+$ git clone https://github.com/viorica/planets.git
 ~~~
 
 `git clone` creates a fresh local copy of a remote repository.
@@ -177,7 +178,7 @@ Let's make a change in the copy in `/tmp/planets`:
 ~~~
 $ cd /tmp/planets
 
-$ nano pluto.txt
+$ vim pluto.txt
 
 $ cat pluto.txt
 It is so a planet!
@@ -198,7 +199,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/vlad/planets.git
+To https://github.com/viorica/planets.git
    9272da5..29aba7c  master -> master
 ~~~
 
@@ -216,7 +217,7 @@ remote: Counting objects: 4, done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From https://github.com/vlad/planets
+From https://github.com/viorica/planets
  * branch            master     -> FETCH_HEAD
 Updating 9272da5..29aba7c
 Fast-forward
@@ -250,7 +251,7 @@ fork, others that may be **parallel** to your fork, and so on.
 
 ### Exercise : Fork Our GitHub Repository
 
-In step 1, you will make a copy "fork" of our thehackerwithin/berkeley 
+In step 1, you will make a copy "fork" of my JellyBeanCode, rachelslaybaugh/JellyBeanCode
 repository on github.  This gives you a copy of this repository that you 
 control.
 
@@ -261,15 +262,15 @@ In step 3, you will let git know that in addition to your local copy and
 your fork on github, there is another github repository (called "upstream") 
 that you might want to get updates from.
 
-Step 1 : Go to our
-[repository](https://github.com/thehackerwithin/berkeley)
+Step 1 : Go to the 
+[repository](https://github.com/rachelslaybaugh/JellyBeanCode.git)
 from your browser, and click on the Fork button. Choose to fork it to your
 username rather than any organizations.
 
 Step 2 : Clone it. From your terminal :
 
-    $ git clone https://github.com/YOU/berkeley.git
-    $ cd berkeley
+    $ git clone https://github.com/YOU/JellyBeanCode.git
+    $ cd JellyBeanCode
 
 Note: YOU is a placeholder for YOUR github username.  If git asks you for 
 a password here, it probably means you have mis-typed the url for the 
@@ -277,12 +278,12 @@ repository.
 
 Step 3 : 
 
-    $ git remote add upstream https://github.com/thehackerwithin/berkeley.git
+    $ git remote add upstream https://github.com/rachelslaybaugh/JellyBeanCode.git
     $ git remote -v
-    origin  https://github.com/YOU/berkeley.git (fetch)
-    origin  https://github.com/YOU/berkeley.git (push)
-    upstream        https://github.com/thehackerwithin/berkeley.git (fetch)
-    upstream        https://github.com/thehackerwithin/berkeley.git (push)
+    origin  https://github.com/YOU/JellyBeanCode.git (fetch)
+    origin  https://github.com/YOU/JellyBeanCode.git (push)
+    upstream        https://github.com/rachelslaybaugh/JellyBeanCode.git (fetch)
+    upstream        https://github.com/rachelslaybaugh/JellyBeanCode.git (push)
     $
 
 All repositories that are clones begin with a remote called origin.
@@ -291,18 +292,23 @@ All repositories that are clones begin with a remote called origin.
 The **git remote add** merely defines a nickname and a location that 
 git will be able to communicate with for making copies of your 
 repository.  "origin" and "upstream" are nicknames for your fork of 
-berkeley and the "original" berkeley, respectively.
+JellyBeanCode and the "original" JellyBeanCode, respectively.
+
+## aside about branches:
+The default branch in most repositories is called the "master" branch. 
+Other branches with other names can be created, but for now we will
+only worry about the master branch. 
 
 git fetch : Fetching the contents of a remote
 ------------------------------------------------
 
 Now that you have alerted your repository to the presence of others, it
 is able to pull in updates from those repositories. In this case, if you
-want your master branch to track updates in the original berkeley
+want your master branch to track updates in the original JellyBeanCode
 repository, you simply **git fetch** that repository into the master
 branch of your current repository.
 
-The fetch command alone merely pulls down information recent changes
+The fetch command alone merely pulls down recent changes
 from the original master (upstream) repository. By itself, the fetch
 command does not change your local working copy. To update your local
 working copy to include recent changes in the original (upstream)
@@ -312,7 +318,7 @@ git merge : Merging the contents of a remote
 ------------------------------------------------
 
 To incorporate upstream changes from the original master repository (in
-this case thehackerwithin/berkeley) into your local working copy, you
+this case rachelslaybaugh/JellyBeanCode) into your local working copy, you
 must both fetch and merge. The process of merging may result in
 conflicts, so pay attention. This is where version control is both at
 its most powerful and its most complicated.
@@ -362,7 +368,7 @@ We'll talk about conflicts later, but first, let's make a small change
 that won't have any conflicts and send our changes to
 your fork, the "origin."
 
-1. Create a file in the `messages` directory whose filename is your github
+1. Create a file in the `developers` directory whose filename is your github
 id.  (This is to ensure no conflicts just yet!)  Add a line of text, perhaps a
 description of how you use, or expect to use, programming in your
 work.
@@ -390,11 +396,11 @@ There is now a hierarchy of git repositories.  There was the upstream
 repository that you can't write to, there is your fork of that repository
 that you have updated, and there is the local copy on your hard drive.
 
-In the berkeley code, you'll find various files called readme.md. This is a
+In the JellyBeanCode directory, you'll find a file called readme.md. This is a
 standard documentation file that appears rendered on the landing page
 for the repository and in github. This very file is a readme file in the 
-  git/partII directory. To see the rendered version, visit your
-fork on github, (https://github.com/YOU/berkeley/git/partII/readme.md).
+  JellyBeanCode directory. To see the rendered version, visit your
+fork on github, (https://github.com/YOU/JellyBeanCode/readme.md).
 
 github pull requests 
 --------------------------
@@ -442,8 +448,8 @@ commit your changes.
     $ git checkout development
     Switched to branch 'development'
     $ cd git/partII
-    $ nano readme.md &
-    <edit the readme file and exit nano>
+    $ vim readme.md &
+    <edit the readme file and exit vim>
     $ git commit -am "Changed the Readme message to ... "
 
 Step 2 : Mirror the remote upstream repository in your master branch 
