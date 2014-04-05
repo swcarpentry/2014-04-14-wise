@@ -89,7 +89,7 @@ Staging a File
 
 The "untracked files" message means that there's a file in the directory
 that Git isn't keeping track of.
-We can tell Git that it should do so like this:
+We can tell Git that it should start keeping track of it like this:
 
 ~~~
 $ git add mars.txt
@@ -130,12 +130,12 @@ When we run `git commit`,
 Git takes everything we have told it to save using `git add`
 and stores a copy permanently inside the special `.git` directory.
 This permanent copy is called a [revision](../../gloss.html#revision)
-and in this case it is identify by `f22b25e` (your revision will
+and in this case it is identified by `f22b25e` (your revision will
 have another identifier).
 We use the `-m` flag (for "message")
 to record a comment that will help us remember later on what we did and why.
 If we just run `git commit` without the `-m` option,
-Git will launch `nano` (or whatever other editor we configured at the start)
+Git will launch `vim` (or whatever other editor we configured at the start)
 so that we can write a longer message.
 
 If we run `git status` now:
@@ -158,7 +158,7 @@ we can ask Git to show us the project's history:
 ~~~
 $ git log
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Starting to think about Mars
@@ -170,16 +170,16 @@ Making Changes
 Now suppose Dracula adds more information to the file:
 
 ~~~
-$ nano mars.txt
+$ vim mars.txt
 
 $ cat mars.txt
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 ~~~
 
 
-We don't need to run `git add` again,
-because Git already knows this file is on the list of things it's managing.
+This time,
+Git already knows this file is on the list of things it's managing.
 If we run `git status`,
 it tells us the file has been modified:
 
@@ -212,7 +212,7 @@ index df0654a..315bf3a 100644
 +++ b/mars.txt
 @@ -1 +1,2 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 ~~~
 
 The output is cryptic because
@@ -260,7 +260,7 @@ Git insists that we add files to the set we want to commit
 before actually committing anything
 because we often won't commit everything at once.
 For example,
-suppose we're adding a few citations to our supervisor's work
+suppose we're adding a few more citations 
 to our thesis.
 We might want to commit those additions,
 and the corresponding addition to the bibliography,
@@ -268,21 +268,22 @@ but *not* commit the work we've been doing on the conclusion.
 To allow for this,
 Git has a special staging area
 where it keeps track of things that have been added to
-the current [change set](../gloss.html#change-set)
+the current [change set](../../gloss.html#change-set)
 but not yet committed.
 `git add` puts things in this area,
 and `git commit` then copies them to long-term storage:
 
 !["The Git Staging Area"](https://raw.github.com/katyhuff/berkeley/master/git/img/git-staging-area.png)
 
-The following commands show this in action:
+We've already done all the steps in this process,
+but let's look at it a little more closely:
 
 ~~~
-$ nano mars.txt
+$ vim mars.txt
 
 $ cat mars.txt
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 
 $ git diff
@@ -292,7 +293,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -323,7 +324,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -352,19 +353,19 @@ and look at the history of what we've done so far:
 $ git log
 git log
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
     Thoughts about the climate
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Concerns about Mars's moons on my furry friend
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
+Author: Viorica Dracula <viorica@tran.sylvan.ia>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Starting to think about Mars
@@ -383,7 +384,7 @@ index 315bf3a..b36abfd 100644
 +++ b/mars.txt
 @@ -1,2 +1,3 @@
  Cold and dry, but everything is my favorite color
- The two moons may be a problem for Wolfman
+ The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 
 $ git diff HEAD~2 mars.txt
@@ -393,7 +394,7 @@ index df0654a..b36abfd 100644
 +++ b/mars.txt
 @@ -1 +1,3 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -419,7 +420,7 @@ index df0654a..b36abfd 100644
 +++ b/mars.txt
 @@ -1 +1,3 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -435,7 +436,7 @@ index df0654a..b36abfd 100644
 +++ b/mars.txt
 @@ -1 +1,3 @@
  Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
++The two moons may be a problem for Wolfwoman
 +But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -445,7 +446,7 @@ can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
 ~~~
-$ nano mars.txt
+$ vim mars.txt
 
 $ cat mars.txt
 We will need to manufacture our own oxygen
@@ -478,7 +479,7 @@ HEAD is now at 005937f Thoughts about the climate
 
 $ cat mars.txt
 Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
+The two moons may be a problem for Wolfwoman
 But the Mummy will appreciate the lack of humidity
 ~~~
 
@@ -565,7 +566,7 @@ basic example.  In a repository, the file `.gitignore` is used to
 specify files to ignore.
 
 ```
-$ nano .gitignore
+$ vim .gitignore
 $ cat .gitignore
 *.dat
 /results/
@@ -579,6 +580,7 @@ Now, we have a much cleaner status.
 
 
 ```
+$ git status
 # On branch master
 #
 # Initial commit
