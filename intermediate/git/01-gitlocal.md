@@ -1,14 +1,13 @@
-Version Control With Git
-=========================
+---
+layout: lesson
+root: ../..
+title: Conversational Git
+level: intermediate
+---
 
-This material was adapted from work by The Hacker Within as well as Software 
-Carpentry.
+## Getting Started 
 
-Getting Started 
----------------
-
-Once Git is configured,
-we can start using Git.
+Once Git is configured, we can start using Git.
 Let's create a directory for our work:
 
 ~~~
@@ -17,7 +16,7 @@ $ mkdir planets
 $ cd planets
 ~~~
 
-and tell Git to make it a [repository](../gloss.html#repository):
+and tell Git to make it a repository:
 
 ~~~
 $ git init
@@ -60,8 +59,12 @@ let's add some notes about Mars's suitability as a base.
 but in real life this isn't necessary.)
 
 ~~~
-$ nano mars.txt
+$ vim mars.txt
+~~~
 
+Add text to the file like `Cold and dry, but everything is my favorite color`
+
+~~~
 $ cat mars.txt
 Cold and dry, but everything is my favorite color
 
