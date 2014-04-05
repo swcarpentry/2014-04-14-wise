@@ -7,12 +7,38 @@ level: novice
 
 <div class="toc" markdown="1">
 
-- Introduction, Katy Huff
-- [Shell, Suzanne Kiihne](shell/shell.html)
-- [Version Control, Jessica Kerr](git/git.html)
-- [Introduction to Python, Molly Gibson](py-intro/py-intro.html)
-- [Classes in Python, Molly Gibson](py-classes/py-classes.html)
-- [Testing in Python, Molly Gibson](py-testing/py-testing.html)
-- [Science in Python, Suzanne Kiihne](py-scipy/py-scipy.html)
+
+# Day 1 
+ 
+| **When**  | **What**         | **Where** | **Who** | 
+| --------  | --------         | --------- | ------- |
+| 8:30-9:00   | Set Up         |           | All             |
+| 9:00-9:30   | Introduction   | ___       | Katy Huff       |
+| 9:30-10:30  | Shell          | [Shell](shell/tutorial.html) | Suzanne Kiihne |
+| 10:30-10:45 | Break          | ___       | All             |
+| 10:45-12:15 | Shell          | [Shell](shell/tutorial.html) | Suzanne Kiihne |
+| 12:15-1:15  | Lunch          | Cafeteria | All |
+| 1:15-2:30   | Git Local      | [Git Local](git/local.html) | Jessica Kerr |
+| 2:30-2:45   | Break
+| 2:45-4:30   | Git Remote      | [Git Remote](git/remote.html) | Jessica Kerr |
+| 4:30-5:00   | Questions       | ___      | All | 
+
+
+
+# Day 2 
+
+ 
+| **When**  | **What**             | **Where** | **Who** | 
+| --------  | --------             | --------- | ------- |
+| 8:30-9:00   | Review             |  ___      | All             |
+| 9:00-10:30   | Intro Python      | [Intro Python](py-intro/tutorial.html)  | Molly Gibson |
+| 10:30-10:45 | Break              | ___       | All             |
+| 10:45-12:15 | Classes            | [Classes](py-classes/tutorial.html) | Molly Gibson |
+| 12:15-1:15  | Lunch              | Cafeteria | All |
+| 1:15-2:30   | Testing            | [Testing](py-testing/tutorial.html) | Molly Gibson |
+| 2:30-2:45   | Break              | ___       | All |
+| 2:45-4:30   | Science In Python  | [Science](py-scipy/tutorial.html) | Suzanne Kiihne |
+| 4:30-5:00   | Questions          | ___      | All | 
+
 
 </div>
