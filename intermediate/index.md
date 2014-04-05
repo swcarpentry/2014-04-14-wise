@@ -12,7 +12,7 @@ level: intermediate
 - [Version Control, Rachel Slaybaugh](git/git.html)
 - [Introduction to Python, ](py-intro/py-intro.html)
 - [Classes in Python, Rachel Slaybaugh](py-classes/py-classes.html)
-- [Testing in Python, ](py-testing/py-testing.html)
-- [Science in Python, ](py-scipy/py-scipy.html)
+- [Testing in Python, Azalee Bostroem](py-testing/py-testing.html)
+- [SQL, Jessica Kerr](sql/sql.html)
 
 </div>

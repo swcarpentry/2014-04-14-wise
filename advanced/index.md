@@ -14,5 +14,6 @@ level: advanced
 - [Classes in Python, Cindee Madison](py-classes/py-classes.html)
 - [Testing in Python, Katy Huff](py-testing/py-testing.html)
 - [Science in Python, Cindee Madison](py-scipy/py-scipy.html)
+- [Plotting in Python, Azalee Bostroem](py-matplotlib/py-matplotlib.html)
 
 </div>
