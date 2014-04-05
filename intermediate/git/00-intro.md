@@ -5,7 +5,7 @@ title: Introducing Distributed Version Control, and Introducing Yourself to Git
 level: intermediate
 ---
 
-## Introducing Distributed Version Control
+## Why Use Distributed Version Control?
 
 Barbara Biologist and Candace Cosmologist have been hired by Universal Missions
 (a space services spinoff from Euphoric State University)

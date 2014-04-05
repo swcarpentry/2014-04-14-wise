@@ -20,6 +20,6 @@ Topics
 ------
 * [Introducing Distributed Version Control, and Introducing
 Yourself to Git](00-intro.html)
-* [Conversational Git](01-conversational-git.html)
+* [Conversational Git](01-gitlocal.html)
 * [The Git Development Workflow](02-developing.html)
 * [Collaborating with Git and GitHub](03-collaborating.html)
