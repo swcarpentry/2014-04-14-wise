@@ -73,7 +73,7 @@ BOOK_DST = $(OUT)/book.html
 # Default action: show available commands (marked with double '#').
 all : commands
 
-## quick    : build just the bootcamp home page.
+## quick    : build the bootcamp home page.
 quick : $(OUT)/index.html
 	jekyll -t build -d $(OUT)
 
