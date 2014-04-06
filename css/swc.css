@@ -202,6 +202,11 @@ iframe.youtube_player {
     height      : 500px;
 }
 
+/* style for centered logos and other images */
+img.logo {
+    margin: 20px auto; 
+}
+
 /* Amy Brown's logo in book/stylesheet.html. */
 img.logoARB {
     float: right;
