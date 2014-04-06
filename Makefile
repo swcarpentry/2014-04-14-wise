@@ -83,7 +83,7 @@ install : $(OUT)/index.html
 	cp -r _site $(INSTALL_DIR)
 	mv $(INSTALL_DIR)/contents.html $(INSTALL_DIR)/index.html
 
-## site     : build site.
+## site     : build site including the entire book version of the lessons
 site : $(BOOK_DST)
 
 $(BOOK_DST) : $(OUT)/index.html $(BOOK_TMP) _templates/book.tpl tmp/gloss.md bin/make-book.py
