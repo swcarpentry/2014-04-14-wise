@@ -447,10 +447,10 @@ commit your changes.
     $ git branch development
     $ git checkout development
     Switched to branch 'development'
-    $ cd git/partII
-    $ vim readme.md &
+    $ vim readme.md 
     <edit the readme file and exit vim>
-    $ git commit -am "Changed the Readme message to ... "
+    $ git add readme.md
+    $ git commit -m "Changed the readme message to ... "
 
 Step 2 : Mirror the remote upstream repository in your master branch 
 by pulling down my changes
@@ -461,7 +461,7 @@ by pulling down my changes
     $ git merge upstream/master
     Updating 43844ea..3b36a87
     Fast-forward
-     Readme.md |   2 +-
+     readme.md |   2 +-
      1 files changed, 1 insertions(+), 1 deletions(-)
 
 Step 3 : You want to push it to the internet eventually, so you pull
@@ -493,7 +493,7 @@ you'll see something like this at the beginning of the file.
 
     =====================
     <<<<<<< HEAD
-    Howdy
+    Bienvenue
     =======
     Willkommen
     >>>>>>> development
@@ -506,12 +506,12 @@ must be made by a human.  Differences that can be automatically merged
 usually are, so humans are involved only when different edits touch
 the same piece of the repository. 
 
-    Howdy and Willkommen
+    Bienvenue and Willkommen
 
 This results in a status To alert git that you have made appropriate
 alterations,
 
-    $ git add Readme.md
+    $ git add readme.md
     $ git commit
     Merge branch 'development'
 
@@ -551,7 +551,7 @@ to update those
 
 And all is synchronized.
 
-What about Berkelium?
+What about a remote computer, for example, Berkelium?
 ----------------------
 
 ### Starting with code on Bk
