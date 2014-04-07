@@ -178,7 +178,7 @@ Let's make a change in the copy in `/tmp/planets`:
 ~~~
 $ cd /tmp/planets
 
-$ vim pluto.txt
+$ nano pluto.txt
 
 $ cat pluto.txt
 It is so a planet!
@@ -447,8 +447,8 @@ commit your changes.
     $ git branch development
     $ git checkout development
     Switched to branch 'development'
-    $ vim readme.md 
-    <edit the readme file and exit vim>
+    $ nano readme.md 
+    <edit the readme file and exit nano>
     $ git add readme.md
     $ git commit -m "Changed the readme message to ... "
 

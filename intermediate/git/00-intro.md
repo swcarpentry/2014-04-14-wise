@@ -108,12 +108,12 @@ In newer versions of Git,
 this option has already been set for you.
 
 Finally, Git wants to know how you like to edit files.
-For now, we'll use `vim`,
+For now, we'll use `nano`,
 but feel free to change this
 if you prefer a different editor.
 
 ~~~
-$ git config --global core.editor "vim"
+$ git config --global core.editor "nano"
 ~~~
 
 Git commands are written `git verb`,

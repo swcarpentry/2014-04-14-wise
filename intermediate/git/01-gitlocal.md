@@ -59,7 +59,7 @@ let's add some notes about Mars's suitability as a base.
 but in real life this isn't necessary.)
 
 ~~~
-$ vim mars.txt
+$ nano mars.txt
 ~~~
 
 Add text to the file like `Cold and dry, but everything is my favorite color`
@@ -135,7 +135,7 @@ have another identifier).
 We use the `-m` flag (for "message")
 to record a comment that will help us remember later on what we did and why.
 If we just run `git commit` without the `-m` option,
-Git will launch `vim` (or whatever other editor we configured at the start)
+Git will launch `nano` (or whatever other editor we configured at the start)
 so that we can write a longer message.
 
 If we run `git status` now:
@@ -170,7 +170,7 @@ Making Changes
 Now suppose Dracula adds more information to the file:
 
 ~~~
-$ vim mars.txt
+$ nano mars.txt
 
 $ cat mars.txt
 Cold and dry, but everything is my favorite color
@@ -279,7 +279,7 @@ We've already done all the steps in this process,
 but let's look at it a little more closely:
 
 ~~~
-$ vim mars.txt
+$ nano mars.txt
 
 $ cat mars.txt
 Cold and dry, but everything is my favorite color
@@ -446,7 +446,7 @@ can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
 ~~~
-$ vim mars.txt
+$ nano mars.txt
 
 $ cat mars.txt
 We will need to manufacture our own oxygen
@@ -566,7 +566,7 @@ basic example.  In a repository, the file `.gitignore` is used to
 specify files to ignore.
 
 ```
-$ vim .gitignore
+$ nano .gitignore
 $ cat .gitignore
 *.dat
 /results/
