@@ -2,10 +2,8 @@
 layout: lesson
 root: .
 title: Room Location for WiSE Intermediate Section
-level: intermediate
 ---
 
-<div class="toc" markdown="1">
 Your track will meet in 15-253 at Lawrence Berkeley National Laboratory. 
 To get to the lab, please take the [Blue Uphill shuttle][shuttle] from Berkeley.
 
@@ -17,4 +15,3 @@ House. Continue toward building 15, which will be on your left.
 [shuttle]: http://www.lbl.gov/Workplace/Facilities/Support/Busses/off-site_blue.html 
 "Uphill Shuttle"
 [map]: http://map.lbl.gov/#UMAP_2012091840117 "Interactive Map"
-</div>
