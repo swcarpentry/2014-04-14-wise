@@ -1,6 +1,6 @@
 ---
 layout: lesson
-root: ..
+root: .
 title: Room Location for WiSE Intermediate Section
 level: intermediate
 ---
