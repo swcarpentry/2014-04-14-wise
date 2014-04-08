@@ -13,7 +13,7 @@ level: novice
 | **When**               | **What**         | **Where**          | **Who** | 
 |:-----------------------|:------------------------|:--------------------------|---------------:|
 | 8:30-9:00      | -- Set Up --------- | Here               | All             |
-| 9:00-9:30      | -- Introduction --- | Here               | Katy Huff       |
+| 9:00-9:30      | -- Introduction --- | [Intro](../intro)            | Katy Huff       |
 | 9:30-10:30     | -- Shell ---------- | [Shell](shell/tutorial.html) | Suzanne Kiihne |
 | 10:30-10:45    | -- Break ---------- | Here               | All             |
 | 10:45-12:15    | -- Shell ---------- | [Shell](shell/tutorial.html) | Suzanne Kiihne |
