@@ -74,10 +74,12 @@ contact: admin@software-carpentry.org
 <p>
   <strong>Where:</strong>
   {{ page.address }}.
-  Take the Blue Uphill Shuttle from Berkeley to Lawrence Berkeley National 
+  To get close, you can get directions with <a href="http://www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a> 
+  or <a href="http://maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+  Once you're in Berkeley, take the Blue Uphill Shuttle from Berkeley to Lawrence Berkeley National 
   Laboratory. Then, navigate to the room dedicated for your track. There are 
-  <a href='{{site.github.url}}/novice_room'>Novice</a>
-  <a href='{{site.github.url}}/intermediate_room'>Intermediate</a>
+  <a href='{{site.github.url}}/novice_room'>Novice,</a>
+  <a href='{{site.github.url}}/intermediate_room'>Intermediate,</a>
   and 
   <a href='{{site.github.url}}/advanced_room'>Advanced</a>
   tracks.
