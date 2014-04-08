@@ -30,11 +30,11 @@ level: novice
 | **When**               | **What**          | **Where**          | **Who** | 
 |:-----------------------|:--------------------------|:-----------------------|----------------:|
 | 8:30-9:00      | -- Review -------------- |  Here     | All             |
-| 9:00-10:30     | -- Intro Python -------- | [Intro Python](py-intro/tutorial.html)  | Molly Gibson |
+| 9:00-10:30     | -- Intro Python -------- | [Intro Python](python/index.html)  | Molly Gibson |
 | 10:30-10:45    | -- Break --------------- | Here      | All             |
-| 10:45-12:15    | -- Classes ------------- | [Classes](py-classes/tutorial.html) | Molly Gibson |
+| 10:45-12:15    | -- Classes ------------- | [Classes](python/index.html) | Molly Gibson |
 | 12:15-1:15     | -- Lunch --------------- | Cafeteria | All |
-| 1:15-2:30      | -- Testing ------------- | [Testing](py-testing/tutorial.html) | Molly Gibson |
+| 1:15-2:30      | -- Testing ------------- | [Testing](python/index.html) | Molly Gibson |
 | 2:30-2:45      | -- Break --------------- | Here      | All |
 | 2:45-4:30      | -- Science In Python --- | [Science](py-scipy/tutorial.html) | Suzanne Kiihne |
 | 4:30-5:00      | -- Questions ----------- | Here      | All |
