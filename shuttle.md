@@ -68,7 +68,7 @@ front of a store called Scandinavian  Designs.
 |  8:45AM  |  Building 54  |
 |  8:50AM  |  Firehouse (15-253)  |
 |    |    |
-|  9:00AM  |  **Pick-up** at Downtown Berkeley Bart  |
+|  9:00AM  |  **Pick-up** at Downtown Berkeley   |
 |    |  (usual shuttle route)  |
 |  9:10AM  |  Building 65 (50A-5132)  |
 |  9:15AM  |  Building 54  |
