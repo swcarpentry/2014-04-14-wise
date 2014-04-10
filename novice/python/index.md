@@ -22,13 +22,27 @@ to use whatever language your colleagues are using,
 so that you can share you work with them easily,
 and to use that language *well*.
 
-<div class="toc" markdown="1">
+Python: Lesson Outline
+---
 
-1.  [Analyzing Patient Data](01-numpy.html)
-2.  [Creating Functions](02-func.html)
-3.  [Analyzing Multiple Data Sets](03-loop.html)
-4.  [Making Choices](04-cond.html)
-5.  [Defensive Programming](05-defensive.html)
-6.  [Command-Line Programs](06-cmdline.html)
+#### Python Basics (9:00am-10:30am)
 
-</div>
+
+1. [Introduction to Python and IPython](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/01-introduction.ipynb)
+1.  [Using Python for Data Analysis](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/02-data-analysis.ipynb)
+
+#### Functions and Control Structures (10:45am-12:15am)
+
+
+2.  [Creating Functions](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/03-functions.ipynb)
+3.  [Analyzing Multiple Data Sets (Loops)](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/04-loops.ipynb)
+4.  [Making Choices (Conditionals)](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/05-conditionals.ipynb)
+
+#### Testing and Program Execution (1:15pm-2:30pm)
+
+
+5.  [Defensive Programming (Testing)](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/06-testing.ipynb)
+6.  [Command-Line Execution](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/07-cmdline.ipynb)
+
+#### Science in Python (2:45pm-4:30pm)
+
