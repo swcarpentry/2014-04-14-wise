@@ -11,7 +11,8 @@ happening. The schedule for that shuttle includes an evening drop off at
 Alumni Hall for the reception as well.
 
 Note that the **pick-up** location is near the downtown Berkeley BART stop, in 
-front of a store called Scandinavian  Designs.
+front of a store called Scandinavian  Designs.  
+
 
 **Monday April 14 2014**
 
@@ -42,8 +43,9 @@ front of a store called Scandinavian  Designs.
 |  9:20AM  |  Firehouse (15-253)  |
 |    |    |
 |  5:45PM  |  **Pick-up** at 54   |
-|  6:00PM   |  Drop-off at Alumni Hall (Campus)  |
-
+|  6:00PM   |  Drop-off at Alumni Hall (Campus)  |  
+  
+  
 
 
 **Tuesday  April 15   2014**
