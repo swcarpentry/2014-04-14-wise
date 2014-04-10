@@ -20,13 +20,13 @@ front of a store called Scandinavian  Designs.
 |:---------|----------------------------------------------------------------------------:|
 |  7:30AM  |  **Pick-up** at Downtown Berkeley   |
 |    |  (usual Blue shuttle route)  |
-|  7:40AM  |  Building 70 (50A-5132)  |
+|  7:40AM  |  Building 65 (50A-5132)  |
 |  7:45AM  |  Building 54  |
 |  7:50AM  |  Firehouse (15-253)  |
 |    |    |
 |  8:00AM  |  **Pick-up** at Downtown Berkeley   |
 |    |  (usual Blue shuttle route)  |
-|  8:10AM  |  Building 70 (50A-5132)  |
+|  8:10AM  |  Building 65 (50A-5132)  |
 |  8:15AM  |  Building 54  |
 |  8:20AM  |  Firehouse (15-253)  |
 |    |    |
