@@ -8,7 +8,8 @@ level: advanced
 <div class="toc" markdown="1">
 
 - Introduction, Cindee Madison
-- [Shell, Cindee Madison](shell/shell.htmli) [shelldata.zip](shell/shelldata.zip)
+- [Shell, Cindee Madison](shell/shell.html)
+    - [shelldata.zip](shell/shelldata.zip)
 - [Version Control, Katy Huff](git/git.html)
 - [Introduction to Python, Katy Huff](py-intro/py-intro.html)
 - [Classes in Python, Cindee Madison](py-classes/py-classes.html)
