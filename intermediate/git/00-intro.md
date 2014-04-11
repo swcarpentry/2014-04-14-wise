@@ -5,7 +5,7 @@ title: Introducing Distributed Version Control, and Introducing Yourself to Git
 level: intermediate
 ---
 
-## Introducing Distributed Version Control
+## Why Use Distributed Version Control?
 
 Barbara Biologist and Candace Cosmologist have been hired by Universal Missions
 (a space services spinoff from Euphoric State University)
@@ -112,7 +112,9 @@ For now, we'll use `nano`,
 but feel free to change this
 if you prefer a different editor.
 
+~~~
 $ git config --global core.editor "nano"
+~~~
 
 Git commands are written `git verb`,
 where `verb` is a command you want Git to do.
