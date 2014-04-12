@@ -1,42 +1,146 @@
 ---
 layout: lesson
 root: ..
-title: Room Location for WiSE Intermediate Section
+title: Schedule for WiSE Intermediate Section
 level: intermediate
 ---
 
-<div class="toc" markdown="1">
 
 # Day 1 
- 
- | **When**       | **What**         | **Where**          | **Who** | 
- | -------------- | ---------------- | ------------------ | ------- |
- | 8:30-9:00      | Set Up           | Here               | All             |
- | 9:00-9:30      | Introduction     | Here               | Rachel Slaybaugh       |
- | 9:30-10:30     | Shell            | [Shell](shell/tutorial.html) | Azalee Bostroem |
- | 10:30-10:45    | Break            | Here               | All             |
- | 10:45-12:15    | Shell            | [Shell](shell/tutorial.html) | Azalee Bostroem |
- | 12:15-1:15     | Lunch            | Cafeteria          | All |
- | 1:15-2:30      | Git Local        | [Git Local](git/local.html) | Rachel Slaybaugh |
- | 2:30-2:45      | Break            | Here               | All |
- | 2:45-4:30      | Git Remote       | [Git Remote](git/remote.html) | Rachel Slaybaugh |
- | 4:30-5:00      | Questions        | Here                | All | 
+
+
+<table class="table table-striped"> 
+<tr>
+    <td> <b>When</b>       </td>
+    <td> <b>What</b>         </td>
+    <td> <b>Where</b>          </td>
+    <td> <b>Who</b> </td>
+</tr>
+<tr>
+    <td> 8:30-9:00      </td>
+    <td> Set Up           </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 9:00-9:30      </td>
+    <td> Introduction     </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
+    <td> Rachel Slaybaugh       </td>
+</tr>
+<tr>
+    <td> 9:30-10:30     </td>
+    <td> Shell            </td>
+    <td> <a href="{{ site.url }}/intermediate/shell/tutorial.html">Shell</a> </td>
+    <td> Azalee Bostroem </td>
+</tr>
+<tr>
+    <td> 10:30-10:45    </td>
+    <td> Break            </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 10:45-12:15    </td>
+    <td> Shell            </td>
+    <td> <a href="{{ site.url }}/intermediate/shell/tutorial.html">Shell</a> </td>
+    <td> Azalee Bostroem </td>
+</tr>
+<tr>
+    <td> 12:15-1:15     </td>
+    <td> Lunch            </td>
+    <td> Cafeteria          </td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 1:15-2:30      </td>
+    <td> Git Local        </td>
+    <td> <a href="{{ site.url }}/intermediate/git/local.html">Shell</a> </td>
+    <td> Rachel Slaybaugh </td>
+</tr>
+<tr>
+    <td> 2:30-2:45      </td>
+    <td> Break            </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 2:45-4:30      </td>
+    <td> Git Remote       </td>
+    <td> <a href="{{ site.url }}/intermediate/git/remote.html">Shell</a> </td>
+    <td> Rachel Slaybaugh </td>
+</tr>
+<tr>
+    <td> 4:30-5:00      </td>
+    <td> Questions        </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>                </td>
+    <td> All </td>
+</tr>
+</table>
 
 
 # Day 2 
 
- 
- | **When**       | **What**            | **Where**          | **Who** | 
- | -------------- | ------------------- | ------------------ | ------- |
- | 8:30-9:00      | Review              |  Here     | All             |
- | 9:00-10:30     | Intro Python        | [Intro Python](py-intro/tutorial.html)  | Azalee Bostroem |
- | 10:30-10:45    | Break               | Here      | All             |
- | 10:45-12:15    | Classes             | [Classes](py-classes/tutorial.html) | Rachel Slaybaugh |
- | 12:15-1:15     | Lunch               | Cafeteria | All |
- | 1:15-2:30      | Testing             | [Testing](py-testing/tutorial.html) | Azalee Bostroem |
- | 2:30-2:45      | Break               | Here      | All |
- | 2:45-4:30      | SQL                 | [SQL](sql/tutorial.html) | Jessica Kerr |
- | 4:30-5:00      | Questions           | Here      | All |
 
-
-</div>
+<table class="table table-striped">
+<tr>
+    <td> <b>When</b>       </td>
+    <td> <b>What</b>            </td>
+    <td> <b>Where</b>          </td>
+    <td> <b>Who</b> </td>
+</tr>
+<tr>
+    <td> 8:30-9:00      </td>
+    <td> Review              </td>
+    <td>  <a href="{{ site.url }}/intermediate_room.html">B15-253</a>     </td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 9:00-10:30     </td>
+    <td> Intro Python        </td>
+    <td> <a href="{{ site.url }}/intermediate/python/intro.html">Shell</a> </td>
+    <td> Azalee Bostroem </td>
+</tr>
+<tr>
+    <td> 10:30-10:45    </td>
+    <td> Break               </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>      </td>
+    <td> All             </td>
+</tr>
+<tr>
+    <td> 10:45-12:15    </td>
+    <td> Classes             </td>
+    <td> <a href="{{ site.url }}/intermediate/python/classes.html">Shell</a> </td>
+    <td> Rachel Slaybaugh </td>
+</tr>
+<tr>
+    <td> 12:15-1:15     </td>
+    <td> Lunch               </td>
+    <td> Cafeteria </td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 1:15-2:30      </td>
+    <td> Testing             </td>
+    <td> <a href="{{ site.url }}/intermediate/python/testing.html">Shell</a> </td>
+    <td> Azalee Bostroem </td>
+</tr>
+<tr>
+    <td> 2:30-2:45      </td>
+    <td> Break               </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>      </td>
+    <td> All </td>
+</tr>
+<tr>
+    <td> 2:45-4:30      </td>
+    <td> SQL                 </td>
+    <td> <a href="{{ site.url }}/intermediate/sql.html">Shell</a> </td>
+    <td> Jessica Kerr </td>
+</tr>
+<tr>
+    <td> 4:30-5:00      </td>
+    <td> Questions           </td>
+    <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>      </td>
+    <td> All </td>
+</tr>
+</table>
