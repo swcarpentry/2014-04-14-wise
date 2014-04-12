@@ -1,3 +1,10 @@
+---
+layout: lesson
+root: ../..
+title: Testing
+level: advanced
+---
+
 First
 =====
 

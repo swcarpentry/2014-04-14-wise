@@ -2,6 +2,7 @@
 layout: lesson
 root: ../..
 title: "Version Control With Git: Local Operations"
+level: advanced
 ---
 
 ## Motivation 
