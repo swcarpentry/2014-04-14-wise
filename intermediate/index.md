@@ -11,68 +11,68 @@ level: intermediate
 
 <table class="table table-striped"> 
 <tr>
-    <td> <b>When</b>       </td>
-    <td> <b>What</b>         </td>
+    <td> <b>When</b>           </td>
+    <td> <b>What</b>           </td>
     <td> <b>Where</b>          </td>
     <td> <b>Who</b> </td>
 </tr>
 <tr>
-    <td> 8:30-9:00      </td>
-    <td> Set Up           </td>
+    <td> 8:30-9:00             </td>
+    <td> Set Up                </td>
     <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
-    <td> All             </td>
+    <td> All                   </td>
 </tr>
 <tr>
-    <td> 9:00-9:30      </td>
-    <td> Introduction     </td>
+    <td> 9:00-9:30             </td>
+    <td> Introduction          </td>
     <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
-    <td> Rachel Slaybaugh       </td>
+    <td> Rachel Slaybaugh      </td>
 </tr>
 <tr>
-    <td> 9:30-10:30     </td>
-    <td> Shell            </td>
+    <td> 9:30-10:30            </td>
+    <td> Shell                 </td>
     <td> <a href="{{ site.url }}/intermediate/shell/tutorial.html">Shell</a> </td>
-    <td> Azalee Bostroem </td>
+    <td> Azalee Bostroem       </td>
 </tr>
 <tr>
-    <td> 10:30-10:45    </td>
-    <td> Break            </td>
+    <td> 10:30-10:45           </td>
+    <td> Break                 </td>
     <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
-    <td> All             </td>
+    <td> All                   </td>
 </tr>
 <tr>
-    <td> 10:45-12:15    </td>
-    <td> Shell            </td>
-    <td> <a href="{{ site.url }}/intermediate/shell/tutorial.html">Shell</a> </td>
-    <td> Azalee Bostroem </td>
+    <td> 10:45-12:00           </td>
+    <td> Git Local             </td>
+    <td> <a href="{{ site.url }}/intermediate/git/local.html">Git Part I</a> </td>
+    <td> Rachel Slaybaugh      </td>
 </tr>
 <tr>
-    <td> 12:15-1:15     </td>
-    <td> Lunch            </td>
+    <td> 12:00-1:00            </td>
+    <td> Lunch                 </td>
     <td> <a href="{{ site.url }}/cafeteria.html">Cafeteria</a>               </td>
     <td> All </td>
 </tr>
 <tr>
-    <td> 1:15-2:30      </td>
-    <td> Git Local        </td>
-    <td> <a href="{{ site.url }}/intermediate/git/local.html">Shell</a> </td>
+    <td> 1:00-2:45             </td>
+    <td> Git Remote            </td>
+    <td> <a href="{{ site.url }}/intermediate/git/Remote.html">Git Part II</a> </td>
     <td> Rachel Slaybaugh </td>
 </tr>
 <tr>
-    <td> 2:30-2:45      </td>
-    <td> Break            </td>
+    <td> 2:45-3:00             </td>
+    <td> Break                 </td>
     <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>               </td>
     <td> All </td>
 </tr>
 <tr>
-    <td> 2:45-4:30      </td>
-    <td> Git Remote       </td>
-    <td> <a href="{{ site.url }}/intermediate/git/remote.html">Shell</a> </td>
-    <td> Rachel Slaybaugh </td>
+    <td> 3:00-4:30             </td>
+    <td> Intro To Python            </td>
+    <td> <a href="{{ site.url }}/intermediate/python/Intro.html">Intro To Python</a> </td>
+    <td> Azalee Bostroem       </td>
 </tr>
 <tr>
-    <td> 4:30-5:00      </td>
-    <td> Questions        </td>
+    <td> 4:30-5:00             </td>
+    <td> Questions             </td>
     <td> <a href="{{ site.url }}/intermediate_room.html">B15-253</a>                </td>
     <td> All </td>
 </tr>
