@@ -6,10 +6,10 @@ level: intermediate
 ---
 
 
-# Day 1 
+# Day 1
 
 
-<table class="table table-striped"> 
+<table class="table table-striped">
 <tr>
     <td> <b>When</b>           </td>
     <td> <b>What</b>           </td>
@@ -79,7 +79,7 @@ level: intermediate
 </table>
 
 
-# Day 2 
+# Day 2
 
 
 <table class="table table-striped">
@@ -134,7 +134,8 @@ level: intermediate
 <tr>
     <td> 2:45-4:30      </td>
     <td> SQL                 </td>
-    <td> <a href="{{ site.github.url }}/intermediate/sql.html">Shell</a> </td>
+    <td> <a
+    href="http://software-carpentry.org/v4/databases/index.html">Database</a> </td>
     <td> Jessica Kerr </td>
 </tr>
 <tr>
