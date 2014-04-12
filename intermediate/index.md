@@ -49,7 +49,7 @@ level: intermediate
 <tr>
     <td> 12:15-1:15     </td>
     <td> Lunch            </td>
-    <td> Cafeteria          </td>
+    <td> <a href="{{ site.url }}/cafeteria.html">Cafeteria</a>               </td>
     <td> All </td>
 </tr>
 <tr>
