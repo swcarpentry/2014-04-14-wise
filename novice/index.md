@@ -50,7 +50,7 @@ level: novice
 <tr>
     <td> 12:15-1:15     </td>
     <td>  Lunch  </td>
-    <td> <a href="{{ site.url }}/cafeteria.html">Cafeteria</a>          </td>
+    <td> <a href="{{ site.github.url }}/cafeteria.html">Cafeteria</a>          </td>
     <td> All </td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@ level: novice
 <tr>
     <td> 12:15-1:15     </td>
     <td>  Lunch</td>
-    <td> <a href="{{ site.url }}/cafeteria.html">Cafeteria</a> </td>
+    <td> <a href="{{ site.github.url }}/cafeteria.html">Cafeteria</a> </td>
     <td> All </td>
 </tr>
 <tr>
