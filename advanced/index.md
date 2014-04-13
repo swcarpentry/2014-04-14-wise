@@ -66,7 +66,7 @@ level: advanced
 <tr>
     <td> 3:00-4:30      </td>
     <td> Python Intro       </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/intro.html">Introduction to Python</a>      </td>
+    <td> <a href="{{ site.github.url }}/advanced/python/py-intro/index.html">Introduction to Python</a>      </td>
     <td> Katy Huff </td>
 </tr>
 <tr>
