@@ -1,6 +1,6 @@
 ---
 layout: lesson
-root: ../..
+root: ../../..
 title: Testing
 level: advanced
 ---

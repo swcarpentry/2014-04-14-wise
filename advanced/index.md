@@ -97,7 +97,7 @@ level: advanced
 <tr>
     <td> 9:00-10:30    </td>
     <td> Classes             </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/classes.html">Classes in Python</a>      </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/classes.ipynb?create=1">Classes in Python</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
@@ -109,7 +109,7 @@ level: advanced
 <tr>
     <td> 10:45-11:45      </td>
     <td> Testing             </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/testing.html">Testing in Python</a>      </td>
+    <td> <a href="{{ site.github.url }}/advanced/python/testing/index.html">Testing in Python</a>      </td>
     <td> Katy Huff </td>
 </tr>
 <tr>
@@ -120,8 +120,8 @@ level: advanced
 </tr>
 <tr>
     <td> 12:45-2:45      </td>
-    <td> Science in Python </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/science.html">Science in Python</a>      </td>
+    <td> Numbers in Python </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/Numpy.ipynb?create=1">Numbers in Python</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
@@ -132,8 +132,8 @@ level: advanced
 </tr>
 <tr>
     <td> 3:00-3:30      </td>
-    <td> Science in Python   </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/science.html">Science in Python</a>      </td>
+    <td> Science and Data Science in Python   </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/pandas_scipy.ipynb?create=1">Data Science in Python</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
