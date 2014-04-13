@@ -4,6 +4,7 @@ root: ../..
 title: Introduction to Python
 level: Advanced
 ---
+
 Python is a powerful language.
 
 ![Import Antigravity](http://imgs.xkcd.com/comics/python.png)
