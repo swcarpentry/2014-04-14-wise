@@ -109,7 +109,7 @@ level: advanced
 <tr>
     <td> 10:45-11:45      </td>
     <td> Testing             </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/testing.html">Testing in Python</a>      </td>
+    <td> <a href="{{ site.github.url }}/advanced/python/testing/index.html">Testing in Python</a>      </td>
     <td> Katy Huff </td>
 </tr>
 <tr>
