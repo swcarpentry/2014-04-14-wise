@@ -132,8 +132,8 @@ level: advanced
 </tr>
 <tr>
     <td> 3:00-3:30      </td>
-    <td> Science and Data Science in Python   </td>
-    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/pandas_scipy.ipynb?create=1">Data Science in Python</a>      </td>
+    <td> Data Science in Python</td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/pandas_scipy.ipynb?create=1">Pandas</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>

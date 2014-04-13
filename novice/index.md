@@ -99,7 +99,7 @@ level: novice
 <tr>
     <td> 9:00-10:30     </td>
     <td>  Intro Python  </td>
-    <td>  <a href="{{ site.github.url }}/novice/python/intro.html">Introduction to Python</a>     </td>
+    <td>  <a href="{{ site.github.url }}/novice/python/index.html">Introduction to Python</a>     </td>
     <td> Molly Gibson </td>
 </tr>
 <tr>
@@ -111,7 +111,7 @@ level: novice
 <tr>
     <td> 10:45-12:15    </td>
     <td>  Classes</td>
-    <td>  <a href="{{ site.github.url }}/novice/python/classes.html">Classes in Python</a>     </td>
+    <td>  <a href="{{ site.github.url }}/novice/python/index.html">Classes in Python</a>     </td>
     <td> Molly Gibson </td>
 </tr>
 <tr>
@@ -123,7 +123,7 @@ level: novice
 <tr>
     <td> 1:15-2:45      </td>
     <td>  Testing</td>
-    <td>  <a href="{{ site.github.url }}/novice/python/testing.html">Testing in Python</a>     </td>
+    <td>  <a href="{{ site.github.url }}/novice/python/index.html">Testing in Python</a>     </td>
     <td> Molly Gibson </td>
 </tr>
 <tr>
