@@ -97,7 +97,7 @@ level: advanced
 <tr>
     <td> 9:00-10:30    </td>
     <td> Classes             </td>
-    <td> <a href="{{ site.github.url }}/advanced/python/classes.html">Classes in Python</a>      </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/classes.ipynb?create=1">Classes in Python</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
