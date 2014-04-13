@@ -1,8 +1,8 @@
 ---
 layout: lesson
-root: ../..
+root: ../../..
 title: Introduction to Python
-level: Advanced
+level: advanced
 ---
 
 Python is a powerful language.
@@ -12,9 +12,7 @@ Python is a powerful language.
 Let's get started. 
 
 
-
-Topics
-------
+## Topics
 
 - [Types and Variables](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/py-intro/variables.ipynb?create=1)
 - [Data Structures](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/py-intro/data_structures.ipynb?create=1)
