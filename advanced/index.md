@@ -30,7 +30,7 @@ level: advanced
 <tr>
     <td> 9:30-10:30     </td>
     <td> Shell            </td>
-    <td> <a href="{{ site.github.url }}/advanced/shell.html">Shell</a>      </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/shell/Shell.ipynb?create=1">Numbers in Python</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
