@@ -6,8 +6,8 @@ level: novice
 ---
 
 
-# Day 1 
- 
+# Day 1
+
 
 
 <table class="table table-striped">
@@ -56,7 +56,7 @@ level: novice
 <tr>
     <td> 1:15-2:45      </td>
     <td>  Git Local  </td>
-    <td>  <a href="{{ site.github.url }}/novice/git/local.html">Git Part I</a>     </td>
+    <td>  <a href="http://jessitron.github.io/git-happens/scientists/index.html">Git Part I</a>     </td>
     <td> Jessica Kerr </td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ level: novice
 <tr>
     <td> 3:00-4:30      </td>
     <td>  Git Remote</td>
-    <td>  <a href="{{ site.github.url }}/novice/git/remote.html">Git Part II</a>     </td>
+    <td>  <a href="http://jessitron.github.io/git-happens/scientists/index.html">Git Part II</a>     </td>
     <td> Jessica Kerr </td>
 </tr>
 <tr>
@@ -80,9 +80,9 @@ level: novice
 </table>
 
 
-# Day 2 
+# Day 2
 
- 
+
 <table class="table table-striped">
 <tr>
     <td> <b>When</b>               </td>
