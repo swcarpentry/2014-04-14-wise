@@ -6,7 +6,7 @@ level: novice
 ---
 <div class="objectives" markdown="1">
 
-#### Objectives
+#### Objectives  
 *   Explain the similarities and differences between a file and a directory.
 *   Translate an absolute path into a relative path and vice versa.
 *   Construct absolute and relative paths that identify specific files and directories.
@@ -18,14 +18,9 @@ level: novice
 
 The part of the operating system responsible for managing files and directories
 is called the [file system](../../gloss.html#filesystem).
-It organizes our data into files,
-which hold information,
-and directories (also called "folders"),
-which hold files or other directories.
+It organizes our data into files, which hold information, and directories (also called "folders"), which hold files or other directories.
 
-Several commands are frequently used to create, inspect, rename, and delete files and directories.
-To start exploring them,
-let's open a shell window:
+Several commands are frequently used to create, inspect, rename, and delete files and directories. To start exploring them, let's open a shell window:
 
 ~~~
 $

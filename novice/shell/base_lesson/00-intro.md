@@ -12,6 +12,8 @@ level: novice
 
 </div>
 
+## An example:  Why use the shell?
+
 Nelle Nemo, a marine biologist,
 has just returned from a six-month survey of the
 [North Pacific Gyre](http://en.wikipedia.org/wiki/North_Pacific_Gyre),
@@ -55,7 +57,7 @@ As a bonus,
 once she has put a processing pipeline together,
 she will be able to use it again whenever she collects more data.
 
-#### What and Why
+#### CLI vs GUI
 
 At a high level, computers do four things:
 
@@ -64,28 +66,43 @@ At a high level, computers do four things:
 -   communicate with each other; and
 -   interact with us.
 
-They can do the last of these in many different ways,
-including direct brain-computer links and speech interfaces.
-Since these are still in their infancy,
-most of us use windows, icons, mice, and pointers.
+Today, most of us use windows, icons, mice, and trackpads to interact with our computers.
 These technologies didn't become widespread until the 1980s,
-but their roots go back to Doug Engelbart's work in the 1960s,
-which you can see in what has been called
-"[The Mother of All Demos](http://www.youtube.com/watch?v=a11JDLBXtPQ)".
-
-Going back even further,
+but their roots go back to the 1960s. Before that,
 the only way to interact with early computers was to rewire them.
-But in between,
-from the 1950s to the 1980s,
-most people used line printers.
-These devices only allowed input and output of the letters, numbers, and punctuation found on a standard keyboard,
-so programming languages and interfaces had to be designed around that constraint.
+From the 1950s to the 1980s,
+most people used line printers. Many of the commands and techniques we're going to learn about today date to this period.
+Line printers only allowed input and output of the letters, numbers, and punctuation found on a standard keyboard, so programming languages and interfaces had to be designed around that constraint. This led to some particular design goals for shell  programs: 
 
-This kind of interface is called a
-[command-line interface](../../gloss.html#cli), or CLI,
-to distinguish it from the
-[graphical user interface](../../gloss.html#gui), or GUI,
-that most people now use.
+The slow feedback of these early machines also meant that UNIX shell designers had some particular goals:
+
+- minimize human errors: 
+    - comands are terse
+    - the shell can fill in blanks: tab completion, command expansion
+    - command sequences are re-useable: scripting
+
+- maximize effectiveness of each line:  
+    - short commands that combine well
+    - command history
+    - scripting  
+
+Today, most computers have two interfaces:   
+
+- 'desktop environment' or GUI: a [graphical user interface](../../gloss.html#gui)
+- 'shell' or  CLI: [command-line interface](../../gloss.html#cli)
+Most people interact with their computers using the GUI.   
+
+So let's explore some basic uses of the CLI. 
+
+This is the origin of [ASCII text encoding](../../gloss.html#ascii). 
+
+<div>
+    <img src="./img/ASCII_Code_Chart-Quick_ref_card.jpg" alt="" width="60%">
+</div>
+
+Which led to ASCII art. 
+
+#### What is the Shell?
 The heart of a CLI is a [read-evaluate-print loop](../../gloss.html#repl), or REPL:
 when the user types a command and then presses the enter (or return) key,
 the computer reads it,
@@ -100,28 +117,26 @@ In fact,
 there is usually a program in between called a
 [command shell](../../gloss.html#shell).
 What the user types goes into the shell;
-it figures out what commands to run and orders the computer to execute them.
+it figures out what commands to run and orders the computer to execute them. 
 
 A shell is a program like any other.
 What's special about it is that its job is to run other programs
-rather than to do calculations itself.
+rather than to do calculations itself. Like the Finder program on a Mac or the KDE or Gnome programs on a Linux machine (often referred to as a 'Desktop environments'), it is often used to manage the file system. But the shell can do a lot more than that. 
+
 The most popular Unix shell is Bash,
 the Bourne Again SHell
-(so-called because it's derived from a shell written by Stephen Bourne&mdash;this
+(named because it a reworking of the Bourne shell, written by Stephen Bourne&mdash;this
 is what passes for wit among programmers).
 Bash is the default shell on most modern implementations of Unix,
 and in most packages that provide Unix-like tools for Windows.
 
-Using Bash or any other shell
-sometimes feels more like programming than like using a mouse.
-Commands are terse (often only a couple of characters long),
-their names are frequently cryptic,
+Using Bash or any other shell feels more like programming than like using a mouse.
+Because Bash dates back to line printers, the commands are terse (often only a couple of characters long), their names are frequently cryptic,
 and their output is lines of text rather than something visual like a graph.
 On the other hand,
-the shell allows us to combine existing tools in powerful ways with only a few keystrokes
+the shell is more configurable and flexible than a GUI. It allows us to combine existing tools in powerful ways with only a few keystrokes
 and to set up pipelines to handle large volumes of data automatically.
-In addition,
-the command line is often the easiest way to interact with remote machines.
+The command line is also often the easiest way to interact with remote machines.
 As clusters and cloud computing become more popular for scientific data crunching,
 being able to drive them is becoming a necessary skill.
 
@@ -133,6 +148,6 @@ being able to drive them is becoming a necessary skill.
     its support for automating repetitive tasks,
     and that it can be used to access networked machines.
 *   The shell's main disadvantages are its primarily textual nature
-    and how cryptic its commands and operation can be.
+    and its cryptic commands. There's definitely a learning curve!
 
 </div>
