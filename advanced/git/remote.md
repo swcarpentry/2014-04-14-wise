@@ -85,7 +85,7 @@ Step 3 :
 
 All repositories that are clones begin with a remote called origin.
 
-### What's going on here?
+### What's going on here? Awesome Stuff.
 The **git remote add** merely defines a nickname and a location that 
 git will be able to communicate with for making copies of your 
 repository.  "origin" and "upstream" are nicknames for your fork of 
