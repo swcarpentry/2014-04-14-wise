@@ -1,25 +1,22 @@
 ---
 layout: lesson
 root: ../..
-title: The Unix Shell
+title: Using the Shell
 level: novice
 ---
-The Unix shell has been around longer than most of its users have been alive.
-It has survived so long because it's a power tool
-that allows people to do complex things with just a few keystrokes.
-More importantly,
-it helps them combine existing programs in new ways
-and automate repetitive tasks
-so that they don't have to type the same things over and over again.
+The unix shell is one of the most powerful programming languages available. While we are all familiar with graphical user interfaces that allow us to manage our data, documents, files and folders, most of us are not familiar with the rich and varied possibilities provided by the command line interface of the shell; fewer still have mastered it!
+
+Today's lessons will introduce you to commands, tools and workflows that will help you use this powerful tool to efficiently manage datafiles, scripts and computer systems. Also, the shell is one of the oldest languages, and many later developments have borrowed from it heavily. Learning to use this system well will make your management easier and faster, and will also help you develop better programming skills. 
+
+
+Shell: Lesson Outline
+---
 
 <div class="toc" markdown="1">
 
-1.  [Introducing the Shell](00-intro.html)
-2.  [Files and Directories](01-filedir.html)
-3.  [Creating Things](02-create.html)
-4.  [Pipes and Filters](03-pipefilter.html)
-5.  [Loops](04-loop.html)
-6.  [Shell Scripts](05-script.html)
-7.  [Finding Things](06-find.html)
+1.  [The Shell and the Filesystem](01-filesystem.html)
+2.  [Creating and Destroying](02-create-delete.html)
+3.  [Redirection and Pipes](03-pipes.html)
+4.  [An Extended Example](04-nelles-project.html)
 
 </div>
