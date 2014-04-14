@@ -1,0 +1,12 @@
+novice/shell/molecules/cubane.pdb
+novice/shell/molecules/ethane.pdb
+novice/shell/molecules/methane.pdb
+novice/shell/molecules/octane.pdb
+novice/shell/molecules/pentane.pdb
+novice/shell/molecules/propane.pdb
+novice/shell/molecules/cubane.pdb
+novice/shell/molecules/ethane.pdb
+novice/shell/molecules/methane.pdb
+novice/shell/molecules/octane.pdb
+novice/shell/molecules/pentane.pdb
+novice/shell/molecules/propane.pdb
