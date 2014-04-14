@@ -32,7 +32,7 @@ level: novice
 <tr>
     <td> 9:30-10:30     </td>
     <td>  Shell  </td>
-    <td>  <a href="{{ site.github.url }}/novice/shell.html">Shell</a>     </td>
+    <td>  <a href="{{ site.github.url }}/novice/shell/index.html">Shell</a>     </td>
     <td> Suzanne Kiihne </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ level: novice
 <tr>
     <td> 10:45-12:15    </td>
     <td>  Shell  </td>
-    <td>  <a href="{{ site.github.url }}/novice/shell.html">Shell</a>     </td>
+    <td>  <a href="{{ site.github.url }}/novice/shell/index.html">Shell</a>     </td>
     <td> Suzanne Kiihne </td>
 </tr>
 <tr>
