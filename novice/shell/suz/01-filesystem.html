@@ -1705,7 +1705,7 @@ init_mathjax();
 <li><p>There are differnt variations of the shell program, including <strong>csh</strong> (c-shell) , <strong>tcsh</strong> (turbo c-shell), <strong>bash</strong> (bourne-again shell).</p></li>
 <li><p>I this course we will focus in <strong>bash</strong> as it is most common, but the basic commands discussed are very similar across all the shells.</p></li>
 </ul>
-<p>http://en.wikipedia.org/wiki/Bash_(Unix_shell)</p>
+<p><a href="http://en.wikipedia.org/wiki/Bash_/(Unix_shell/)">wikipedia/bash</a></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The heart of a CLI is a <a href="../../gloss.html#repl">read-evaluate-print loop</a>, or REPL: when the user types a command and then presses the enter (or return) key, the computer reads it, executes it, and prints its output. The user then types another command, and so on until the user logs off.</p>
@@ -1760,7 +1760,12 @@ one.text    two.txt</code></pre>
 <p>To understand what a &quot;home directory&quot; is, let's have a look at how the file system as a whole is organized.</p>
 <p><img src="img/filesystem.png" alt="Filesystem Tree" width=50%></p>
 <p>At the top is the <a href="../../gloss.html#root-directory">root directory</a> that holds everything else. The command <code>pwd</code> gives the path to the current directory from the root directory. The path starts with <code>/</code> (root), so it is an <a href="../../gloss.html#absolute-path">absolute path</a>.</p>
-<p>Have a look again at your own home directory path. What is root on your machine? <sub>~</sub><br />echo /users/vlad echo $HOME` echo ~ echo pwd pwd <sub>~</sub></p>
+<p>Have a look again at your own home directory path. What is root on your machine?</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">echo</span> /users/vlad
+<span class="kw">echo</span> <span class="ot">$HOME</span><span class="kw">`</span>
+<span class="kw">echo</span> ~
+<span class="kw">echo</span> pwd
+<span class="kw">pwd</span></code></pre>
 <p>The command <code>echo</code> prints whatever follows it, but if what follows can be expanded by the shell, it will be. The system has a setting</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1777,12 +1782,17 @@ ls
     one.txt    two.txt</code></pre>
 <p>Paths that don't start with <code>/</code> are <strong>relative paths</strong>, because they are defined relative to the current directory. In <code>ls data</code> in the code above, <code>data</code> is a <a href="../../gloss.html#relative-path">relative path</a>.</p>
 <p>There's also a command for moving up the file hierarchy: <code>cd ..</code> The .. refers to 'parent directory'. A single dot . refers to the current directory. The .. and . aren't shell shortcuts like ~; they are actual directories.</p>
-<pre><code>echo ..
-echo .
-ls -a</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">echo</span> ..
+<span class="kw">echo</span> .
+<span class="kw">ls</span> -a</code></pre>
 <p>The command <code>ls</code> normally ignores filenames that begin with dot, such as <code>.bashrc</code>. However, like many shell commands, <code>ls</code> has options that modify its behaviour. The <code>-a</code> option insists that <code>ls</code> show all files, so it will list all those configuration files you didn't know you had!</p>
 <h4 id="practice-time">Practice time:</h4>
-<p>Try using <code>cd</code> with different paths, including <code>..</code> and <code>.</code>, to move around your directories. Use <code>pwd</code> to check where you are, and try out these different options for listing your files and folders: <sub>~</sub> ls -F ls -l ls -al ls -r ls -h <sub>~</sub></p>
+<p>Try using <code>cd</code> with different paths, including <code>..</code> and <code>.</code>, to move around your directories. Use <code>pwd</code> to check where you are, and try out these different options for listing your files and folders:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ls</span> -F
+<span class="kw">ls</span> -l
+<span class="kw">ls</span> -al
+<span class="kw">ls</span> -r
+<span class="kw">ls</span> -h</code></pre>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="a-note-about-filenames">A Note About Filenames</h3>
@@ -1792,11 +1802,11 @@ ls -a</code></pre>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="command-review">Command Review:</h3>
-<pre><code>ls
-cd
-pwd
-whoami
-echo</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ls</span>
+<span class="kw">cd</span>
+<span class="kw">pwd</span>
+<span class="kw">whoami</span>
+<span class="kw">echo</span></code></pre>
 <p>You've learned to move about the file system!</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
