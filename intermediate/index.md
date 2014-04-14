@@ -43,7 +43,7 @@ level: intermediate
 <tr>
     <td> 10:45-12:00           </td>
     <td> Git Local             </td>
-    <td> <a href="{{ site.github.url }}/intermediate/git/local.html">Git Part I</a> </td>
+    <td> <a href="{{ site.github.url }}/intermediate/git/00-intro.md">Git Intro</a>, <a href="{{ site.github.url }}/intermediate/git/01-gitlocal.md">Git local</a></td>
     <td> Rachel Slaybaugh      </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ level: intermediate
 <tr>
     <td> 1:00-2:45             </td>
     <td> Git Remote            </td>
-    <td> <a href="{{ site.github.url }}/intermediate/git/Remote.html">Git Part II</a> </td>
+    <td> <a href="{{ site.github.url }}/intermediate/git/01-collaborating.md">Git Part II</a> </td>
     <td> Rachel Slaybaugh </td>
 </tr>
 <tr>
