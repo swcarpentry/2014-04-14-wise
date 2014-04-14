@@ -31,7 +31,7 @@ level: intermediate
 <tr>
     <td> 9:30-10:30            </td>
     <td> Shell                 </td>
-    <td> <a href="{{ site.github.url }}/intermediate/shell/tutorial.html">Shell</a> </td>
+    <td> <a href="{{ site.github.url }}/intermediate/shell/shell.pdf">Shell</a> </td>
     <td> Azalee Bostroem       </td>
 </tr>
 <tr>
@@ -67,7 +67,7 @@ level: intermediate
 <tr>
     <td> 3:00-4:30             </td>
     <td> Intro To Python            </td>
-    <td> <a href="{{ site.github.url }}/intermediate/python/Intro.html">Intro To Python</a> </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/intermediate/python/01-intro_master.ipynb?create=1">Intro To Python</a> </td>
     <td> Azalee Bostroem       </td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ level: intermediate
 <tr>
     <td> 9:00-10:30     </td>
     <td> Intro Python        </td>
-    <td> <a href="{{ site.github.url }}/intermediate/python/intro.html">Shell</a> </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/intermediate/python/01-intro_master.ipynb?create=1">Intro to Python</a> </td>
     <td> Azalee Bostroem </td>
 </tr>
 <tr>
@@ -110,7 +110,7 @@ level: intermediate
 <tr>
     <td> 10:45-12:15    </td>
     <td> Classes             </td>
-    <td> <a href="{{ site.github.url }}/intermediate/python/classes.html">Shell</a> </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/intermediate/python/03-classes-master.ipynb?create=1">Classes</a> </td>
     <td> Rachel Slaybaugh </td>
 </tr>
 <tr>
@@ -122,7 +122,7 @@ level: intermediate
 <tr>
     <td> 1:15-2:30      </td>
     <td> Testing             </td>
-    <td> <a href="{{ site.github.url }}/intermediate/python/testing.html">Shell</a> </td>
+    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/intermediate/python/04-testing_master.ipynb?create=1">Testing</a> </td>
     <td> Azalee Bostroem </td>
 </tr>
 <tr>
