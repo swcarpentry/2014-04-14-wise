@@ -1829,6 +1829,7 @@ pwd</code></pre>
 <li>Look at the timestamp on the files? What does this information tell you?</li>
 </ol>
 <h3 id="man-short-for-manual">man (short for manual)</h3>
+<p><font color='red'>warning: If you are using gitbash, man will not work. gitbash has only implemented a limited number of commands. Share with a linux or OSX friend?</font></p>
 <p>So how do you find out about all the useful flags for a command?</p>
 <p>Prints out usage for a given command:</p>
 <pre><code>man ls</code></pre>
@@ -1872,7 +1873,7 @@ pwd</code></pre>
 </ol>
 <p><strong>Bonus</strong> Use an absolute path instead of moving to your home directory</p>
 <ol start="2" style="list-style-type: decimal">
-<li>One (or more) files in your home durectory are configuration files for the bash shell, can you guess which one(s)?</li>
+<li>One (or more) files in your home directory are configuration files for the bash shell, can you guess which one(s)?</li>
 </ol>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1888,12 +1889,15 @@ pwd</code></pre>
 ls data/d[tab][tab]</code></pre>
 <p>You had to hit the tab key twice. This is because there was not a <strong>unique option</strong>, instead there are multiple files that begin with <strong>d</strong>. Hitting tab twice shows your possible options. What do you think will happen if you try?</p>
 <pre><code>ls di[tab]</code></pre>
-<h3 id="history">history</h3>
-<p>When at an empty promt, you can use your <em>up arrow</em> and <em>down arrow</em> to cycle through your previously used commands. This can save you alot of typing.</p>
+<h3 id="what-have-you-done-use-history">What have you done? Use history</h3>
+<p>When at an <strong>empty prompt</strong>, you can use your <em>up arrow</em> and <em>down arrow</em> to cycle through your previously used commands. This can save you alot of typing.</p>
 <p>In addition there is a <em>history</em> command which will print out the history of your recently used shell commands</p>
 <pre><code>history</code></pre>
 <h3 id="excercise">Excercise</h3>
-<p>Why could history be useful?</p>
+<ol style="list-style-type: decimal">
+<li>Why could history be useful?</li>
+<li>Remember your hidden files? Was there one that may hold history in it? Can you look into that file?</li>
+</ol>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="reading-files">Reading Files</h1>
@@ -1976,7 +1980,7 @@ ls data/d[tab][tab]</code></pre>
 <li>append all words that start with <em>h</em> in <code>dictionary.txt</code> to <code>g_dictionary.txt</code>, check with less</li>
 <li><em>flashback</em> remove newdictionary</li>
 </ol>
-<h3 id="wc">wc</h3>
+<h3 id="counting-things-using-wc">Counting things using wc</h3>
 <p><strong>wc</strong> stands for <em>word count</em>, and can be used to count words or lines. Lets see how many words are in <strong>dictionary.txt</strong> and then compare that to g_dictionary.txt</p>
 <pre><code>wc dictionary.txt g_dictionary.txt
 
@@ -2035,20 +2039,130 @@ ls data/d[tab][tab]</code></pre>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="lets-use-our-knowledge-to-do-something-useful">Lets use our knowledge to do something useful!</h3>
-<h3 id="nano">nano</h3>
+<h3 id="use-git-to-grab-files-for-the-rest-of-the-workshop">Use git to grab files for the rest of the workshop</h3>
+<p>You should have installed git as part of your pre-workshop installation. Type <strong>git</strong> at the prompt, what do you see?</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">
+    <span class="kw">git</span>
+    <span class="kw">git</span> --version</code></pre>
+<p>Now lets clone the repo for the advanced track</p>
+<ul>
+<li><p>go to the bootcamp directory (use <strong>cd</strong>)</p></li>
+<li><p>use git to clone the repo</p></li>
+</ul>
+<pre class="sourceCode bash"><code class="sourceCode bash">    <span class="kw">git</span> clone https://github.com/swcarpentry/2014-04-14-wise.git</code></pre>
+<h3 id="exercise">Exercise</h3>
+<ol style="list-style-type: decimal">
+<li>What files and directories have been created?</li>
+<li>What is the directory called?</li>
+</ol>
+<h3 id="editing-files-with-nano">Editing files with nano</h3>
 <p><strong>nano</strong> is a simple text editor, much like Microsoft Word is a text editor, but it is specially designed to work with code and scripts. Top open nano, you can just type <code>nano</code> at the command line.</p>
 <pre><code>nano</code></pre>
 <p>This will open a blank text editor. If you use the menu to open <code>dictionary.txt</code>, it will open the text file.</p>
 <p>All commands are at the bottom. To exit nano use Control-x.</p>
+<p><font color='red'>If you alreay use a different editor, feel free to use your editor of choice instead fo nano. But keep in mind nano exists on most systems, this will likely not work on Windows</font></p>
 <h3 id="hidden-files-revisited">Hidden files revisited</h3>
 <p>Remember when we used <code>ls -a</code> to find hidden files. We are going to edit one of those hidden files. First go to your home directory (a quick way to do this is just type <code>cd</code> as it always takes you home. Use <code>pwd</code> to verify</p>
 <pre><code>cd
 pwd</code></pre>
 <p>We are going to update your bash resource file.</p>
+<h3 id="bonus">BONUS</h3>
 <h3 id="bashrc-or-.bash_profile">.bashrc or .bash_profile</h3>
-<p>The <strong>.bashrc</strong> or .bash_profile file in your home directory controls the behavior of your bash shell.</p>
+<p>The <strong>.bashrc</strong> or <strong>.bash_profile file</strong> in your home directory controls the behavior of your bash shell. <font color='red'> This will not work with gitbash on Windows, apologies</font></p>
 <p>We want to add some magic to make working with git (source control) easier.</p>
+<h4 id="link-to-a-github-repo-to-look-at-the-file-we-will-download-it-below-this-is-just-for-information">Link to a github repo to look at the file, we will download it below, this is just for information</h4>
 <p>https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh</p>
+<h3 id="lets-get-the-file-and-make-this-work">Lets get the file and make this work!</h3>
+<ol style="list-style-type: decimal">
+<li>download this file <a href="http://swcarpentry.github.io/2014-04-14-wise/advanced/shell/git-prompt.sh">git-prompt.sh</a> into your home directory</li>
+<li>make it a hidden file (rename to .git-prompt.sh using mv )</li>
+<li>Use nano to open your .bashrc or .bash_profile config file</li>
+<li><p>Add these lines</p>
+<pre><code>source ~/.git-prompt.sh
+PS1=&#39;[\u@\h \W$(__git_ps1 &quot; (%s)&quot;)]\$ &#39;</code></pre></li>
+</ol>
+<p><strong>source</strong> will execute the code in .git-prompt.sh which is a shell script</p>
+<p>the other line will update your prompt when you are working within a git repository</p>
+<p>Exit out of nano and save the file using Control-x</p>
+<h2 id="exercise-1">Exercise</h2>
+<ol style="list-style-type: decimal">
+<li><p>In your current shell , go back to the git repo you downloaded into bootcamp. Is anything different?</p></li>
+<li><p>Open a new terminal/shell, go to the same repo directory in the bootcamp directory. Now what do you see? Why might these be different?</p></li>
+</ol>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="some-extra-coolness-in-a-ipython-notebook">Some Extra coolness in a ipython notebook</h3>
+<p>You can use shell command in an ipython notebook. there are generally two methods</p>
+<p><em>!</em> exclamation point before your command</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">!</span>ls
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To open an ipython notebook</p>
+<ol style="list-style-type: decimal">
+<li>cd to the directory where the notebook is located</li>
+<li>ipython notebook</li>
+</ol>
+<p>This will open a webpage, and it will list the available notebooks</p>
+<p>Click on a notebook to open, and it will open in a tab</p>
+<h3 id="basic-commands-keyboard-shortcuts">Basic commands (Keyboard shortcuts)</h3>
+<ul>
+<li>Shift-Enter to run a cell</li>
+<li>Ctrl-Enter to run a cell in place</li>
+<li>All other keyboard shortcuts have the form: Ctrl-m ?</li>
+<li>Show all keyboard shortcuts using Ctrl-m h</li>
+</ul>
+<h4 id="homework">Homework</h4>
+<ol style="list-style-type: decimal">
+<li><p>Before we meet again tomorrow, spend a little time going into the advanced repo directory, look for notebooks and see if you can open them.</p></li>
+<li><p>Download a copy of the notebook showing how to use shell magic linked at the top of <a href="http://nbviewer.ipython.org/github/ipython/ipython/blob/1.x/examples/notebooks/Cell%20Magics.ipynb">this page</a> (Its the icon of an arrow pointing down)</p></li>
+</ol>
+<p>Not all magic will work for you, but understanding how to navigate the ipython notebook will help during the workshop tomorrow.</p>
+<h3 id="lets-try-a-little-bash-magic">Lets try a little bash magic</h3>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">%%</span><span class="k">bash</span>
+<span class="n">ls</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stdout">
+<pre>
+Shell.html
+Shell.ipynb
+git-prompt.sh
+shelldata.zip
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 </body>
 </html>

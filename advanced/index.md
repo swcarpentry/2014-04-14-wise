@@ -30,7 +30,8 @@ level: advanced
 <tr>
     <td> 9:30-10:30     </td>
     <td> Shell            </td>
-    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/shell/Shell.ipynb?create=1">Numbers in Python</a>      </td>
+    <td> <a
+    href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/shell/Shell.ipynb?create=1">Shell</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
@@ -126,7 +127,8 @@ level: advanced
 <tr>
     <td> 1:45-2:45      </td>
     <td> Science in Python </td>
-    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/scipy.ipynb?create=1">Science in Python</a>      </td>
+    <td> <a
+    href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/pandas.ipynb?create=1">Pandas</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
@@ -138,7 +140,9 @@ level: advanced
 <tr>
     <td> 3:00-3:30      </td>
     <td> Data Science in Python</td>
-    <td> <a href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/pandas.ipynb?create=1">Pandas</a>      </td>
+    <td> <a
+    href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/scipy.ipynb?create=1">Science
+    in Python</a>      </td>
     <td> Cindee Madison </td>
 </tr>
 <tr>
