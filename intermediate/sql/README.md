@@ -4,4 +4,5 @@ root: ../..
 title: Using Databases and SQL
 level: intermediate
 ---
-FIXME: to be written.
+
+This data was downloaded from https://data.sfgov.org/
