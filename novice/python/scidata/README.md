@@ -17,4 +17,4 @@
 
 > Jeanny
 
-I'm going to put this data in here for now (April 14, 2014) for the software carpentry at LBL, but I do not know if this data is in the public domain, so I need to check that *before* I push this to the web.!!!!
+used bash script 'selectlines' to get only a few lines of two of the files. I'm going to put this very small subset of the data in here for now (April 14, 2014) for the software carpentry at LBL, because I do not know if this data is in the public domain!!!!
