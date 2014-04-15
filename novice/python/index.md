@@ -45,6 +45,6 @@ Python: Lesson Outline
 6.  [Command-Line Execution](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/07-cmdline.ipynb)
 
 #### Science in Python (2:45pm-4:30pm)
-7.  [Data Analysis in Python](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/08-pandas.ipynb)
-8.  [Reproducibility](http://nbviewer.ipython.org/github/mollygibson/2014-04-14-wise/blob/gh-pages/novice/python/09-reproducibility.ipynb)
+7.  [Data Analysis in Python](http://swcarpentry.github.io/2014-04-14-wise/novice/python/08-pandas.ipynb)
+8.  [Reproducibility](http://swcarpentry.github.io/2014-04-14-wise/novice/python/09-reproducibility.ipynb)
 
