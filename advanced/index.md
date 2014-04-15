@@ -53,7 +53,7 @@ level: advanced
     <td> All </td>
 </tr>
 <tr>
-    <td> 1:15-2:30      </td>
+    <td> 12:45-2:45      </td>
     <td> Git Part II       </td>
     <td> <a href="{{ site.github.url }}/advanced/git/remote.html">Git Part II</a>      </td>
     <td> Katy Huff </td>
@@ -148,7 +148,8 @@ level: advanced
 <tr>
     <td> 3:30-4:30      </td>
     <td> Plotting            </td>
-    <td> <a href="{{ site.github.url }}/advanced/plotting.html">Plotting</a>      </td>
+    <td> <a
+    href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/matplotlib_master.ipynb?create=1">Plotting</a>      </td>
     <td> Azalee Bostroem</td>
 </tr>
 <tr>
