@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<title>/4299$2014-04-14-wise-intermediate</title>
+</head>
+<body>&nbsp;<br
+/><b>This is the Software Carpentry WiSE Bootcamp Etherpad for the Intermediate Section</b><br
+/>This pad text is synchronized as you type, so that everyone viewing this page sees the same text. Please add questions, comments and concerns to this document.&nbsp;<br
+/><br
+/>Instructors: Rachel Slaybaugh, Azalee Bostroem, Jessica Kerr.<br
+/>Main Bootcamp Page: <a href="https://swcarpentry.github.io/2014-04-14-wise/">https://swcarpentry.github.io/2014-04-14-wise/</a><br
+/>Schedule For Intermediate Section: <a href="https://swcarpentry.github.io/2014-04-14-wise/intermediate">https://swcarpentry.github.io/2014-04-14-wise/intermediate</a><br
+/>Github repository: <a href="https://github.com/swcarpentry/2014-04-14-wise">https://github.com/swcarpentry/2014-04-14-wise</a><br
+/><br
+/>We'll sometimes place commands here<br
+/>Anyone can add notes in this section!<br
+/><br
+/>If you have questions, feel free to ask them in the Chat section and just be sure to type your name in the top right at first, so we know who's commenting or asking questions.<br
+/><br
+/><br
+/><br
+/>Etherpad link:<br
+/><a href="https://swcarpentry.etherpad.mozilla.org/2014-04-14-wise-intermediate">https://swcarpentry.etherpad.mozilla.org/2014-04-14-wise-intermediate</a><br
+/><br
+/>Details about the Receptions tonight (Monday, 4/14):<br
+/>LBL is hosting a pre-reception-reception at the<u> LBL cafeteria</u> at 4:45 - 5:45 to give our attendees more information about opportunities at the Lab. There will be refreshments served (but no alcohol).<br
+/><br
+/>Then there will be a shuttle directly from the Lab to the dinner reception (with alcohol!) at <u>Alumni House</u>. (For people who want to make their own way down rather than take the shuttle, dinner will be served at 7:00, but the reception starts at 6.)<br
+/><br
+/><br
+/><u>Shell commands</u><br
+/><br
+/><b>pwd</b><br
+/>print working directory<br
+/>The current directory is the directory in which you are currently operating<br
+/><br
+/><b>mkdir</b><br
+/>make directory<br
+/><br
+/><b>cd</b><br
+/>change directory<br
+/><br
+/><b>ls</b><br
+/>list files and directory<br
+/><br
+/><b>touch</b><br
+/>creates a new empty file. you can also use it to change the timestamps of existing files or directories.<br
+/><br
+/>'touch testfile.txt'<br
+/><br
+/><b>cat</b><br
+/>view contain of file<br
+/><br
+/>'cat filename'<br
+/><br
+/><b>mv&nbsp;</b><br
+/>move or rename a file: `mv test.txt new_name.txt`<br
+/><br
+/>shell shortcuts:<br
+/><br
+/>- '.' means 'here', the current working directory<br
+/>- '..' means 'up', the parent directory: `cd ..`<br
+/>- '*' means 'everything': `ls *` or `ls *.md`<br
+/>- '?' means a single character<br
+/><br
+/>git clone <a href="https://github.com/swcarpentry/2014-04-14-wise.git">https://github.com/swcarpentry/2014-04-14-wise.git</a><br
+/><br
+/>If git is asking for username and password when you try to git clone, it is possibly a typo. So check the command and try again.<br
+/><br
+/>typo in the slide: .pdb files in 2014-04-14-wise/novice/shell/data/molecules<br
+/><br
+/><b>exercise</b>: copy all pdb files from novice/shell/data/molecules to intermediate/shell/shell_sandbox/molecules<br
+/><br
+/><b>solution:</b><br
+/>cd intermediate/shell<br
+/>mkdir shell_sandbox<br
+/>cd shell_sandbox<br
+/>mkdir molecules<br
+/>cd molecules<br
+/>[copy the prefix for 2014-04-14-wise]<br
+/>cp /Users/abostroem/swcarpentry/2014-04-14-wise/novice/shell/data/molecules/*.pdb ./<br
+/># or use a relative path (../ means up, ../../ means up 2 levels, etc.):<br
+/>cp ../../../../novice/shell/data/molecules/*.pdb ./<br
+/><br
+/><b>find</b><br
+/>find all files in a location<br
+/><br
+/>'find molecules -name a*.pdb'<br
+/>(finds all files starting with 'a' and ending with '.pdb' in the folder molecules)<br
+/>(mine worked with the command "find molecules/a*.pdb", from the shell_sandbox directory)<br
+/><br
+/>The gist of find:<br
+/><br
+/>- `find path` searches 'path'. If you don't specify anything else, it will find all files and directories in 'path'<br
+/>- add `-name` or `-type` or more arguments to filter what should be matched, e.g.:<br
+/>- `find . -name '*.pdb'` will show you all files that end with .pdb in the current directory<br
+/>- `find molecules/ -type f` will show you every file (but not directories) in molecules/<br
+/><br
+/>Find can do all kinds of filters, such as by date, etc. More info on find: <a href="https://www.gnu.org/software/findutils/manual/html_mono/find.html#Finding-Files">https://www.gnu.org/software/findutils/manual/html_mono/find.html#Finding-Files</a><br
+/><br
+/>if you want to search for files recursively starting from a directory you can do&nbsp;<br
+/>find . -name "a*.pdb"<br
+/><br
+/><b>grep </b>searches the contents of files for patterns<br
+/>grep ATOM *.pdb<br
+/>(prints all occurences of the word ATOM in files *.pdb)<br
+/><br
+/><b>tail&nbsp;</b><br
+/>(display the end of text files)<br
+/>e.g. in 2014-04-14-wise/intermediate/shell/shell_sandbox/molecules/<br
+/>'tail vitamin-a.pdb'<br
+/><br
+/><b>wc</b><br
+/>(counts the lines, words, and characters of files)<br
+/><br
+/>ls *.md | wc<br
+/><br
+/><b>Pipe ('|')</b><br
+/>the character '|' routes the output of the first command to the next command<br
+/>the output of the command to the left of the pipe ('|') gets sent as input of the command to the right of the pipe<br
+/><br
+/><br
+/>Find more information on a command:<br
+/><br
+/>- `man [command]` get the manual page (may not work on Windows), e.g. `man wc`<br
+/>- `[command] --help` often works where `man` doesn't, e.g. `ls --help`<br
+/><br
+/><br
+/><b>Exercise: </b>use find to get the number of files you put in shell_sandbox/molecules<br
+/><br
+/>find shell_sandbox/molecules -name '*.pdb' | wc -l<br
+/><br
+/><b>git</b><br
+/><br
+/>intermediate/git/01-gitlocal.md<br
+/><br
+/>get out of the wise repository, and make a new working directory, e.g.:<br
+/>cd ~/swcarpentry<br
+/>mkdir git<br
+/>cd git<br
+/><br
+/><br
+/><br
+/><b>configure git</b>:<br
+/><br
+/>Tell git who you are:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git config --global user.name "yourname"<br
+/>&nbsp;&nbsp;&nbsp; git config --global user.email "your@email.com"<br
+/><br
+/>You can see your new git config with: cat ~/.gitconfig<br
+/><br
+/>Tell git to color output:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git config --global color.ui "auto"<br
+/><br
+/>To select an editor to use with git:<br
+/><br
+/>If you have no preference, nano is probably easiest:<br
+/><br
+/>on non-Windows, nano is easiest:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git config --global core.editor "nano"<br
+/><br
+/><b>Note for Windows users:</b><br
+/><br
+/>on Windows, you can use notepad (this should always work, so use this if you can't get anything else to work):<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git config --global core.editor "notepad"<br
+/><br
+/>If you have notepad++, you can use it with:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++"<br
+/><br
+/><br
+/>To start tracking your work, you can make the current working directory a git repo:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; mkdir planets<br
+/>&nbsp;&nbsp;&nbsp; cd planets<br
+/>&nbsp;&nbsp;&nbsp; git init<br
+/><br
+/>Check the status:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git status<br
+/>Create a file in 'planets' called mars.txt with your editor of choice (nano, text wrangler, notepad++)<br
+/><br
+/>e.g. `notepad mars.txt` on Windows, or `nano mars.txt` everywhere else<br
+/><br
+/>Create a commit with:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git add mars.txt<br
+/>&nbsp;&nbsp;&nbsp; git commit -m "Starting to think about mars"<br
+/><br
+/>Now modify mars.txt again, adding some more text. To see what we changed, use<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git diff<br
+/><br
+/>Additions will be marked with '+', deletions with '-'.<br
+/><br
+/>Don't forget to tell git which changes you want to commit with `git add` before `git commit`.<br
+/><br
+/>&nbsp;&nbsp;&nbsp; `git diff` shows *un staged* changes<br
+/>&nbsp;&nbsp;&nbsp; `git diff --staged` shows the staged changes you are about to commit<br
+/><br
+/>By default `git diff` compares with the latest commit. You can compare with a different reference point by specifying its commit hash (the long hexadecimal string on the first line of the commit in `git log`:<br
+/><br
+/>My git log:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; commit 3670f129f060b13a3e67abb1c85e955cdc19e958<br
+/>&nbsp;&nbsp;&nbsp; Author: MinRK &lt;benjaminrk@gmail.com&gt;<br
+/>&nbsp;&nbsp;&nbsp; Date:&nbsp;&nbsp; Mon Apr 14 11:43:40 2014 -0700<br
+/><br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; create mars.txt<br
+/><br
+/>Compare changes in mars.txt with that commit in particular:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git diff 3670f12 mars.txt<br
+/><br
+/>Undo changes with `git reset`.&nbsp;<br
+/><br
+/>- `git reset --hard` will discard all uncommitted changes<br
+/>- just `git reset` will just un-stage things, leaving all of the changes unstaged (lets you start building your commit again)<br
+/><br
+/>You can get an old version of a single file with `checkout`. To get mars from the first commit above (your hash will be different):<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git checkout 3670f12 mars.txt<br
+/><br
+/>To discard uncommitted changes of a single file, checkout HEAD:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git checkout HEAD mars.txt<br
+/><br
+/><br
+/>(Windows 7) add text editor to PATH<br
+/>-- right click My Computer &gt; select Properties<br
+/>-- click Advanced System Settings&nbsp; link in left column<br
+/>-- in System Properties window click Environment Variables button<br
+/>-- (can set either as User or System variable) highlight (appropriate) PATH variable<br
+/>-- click 'Edit'<br
+/>-- add directory where your text editor is locations to the end of the PATH variable list of directories -- these directories are separate by semi-colons ( ; )<br
+/><br
+/>for example:<br
+/>(before)&nbsp; ...\;C:\AnacondaPython;C:\AnacondaPython\Scripts<br
+/>(after)&nbsp;&nbsp;&nbsp;&nbsp; ...\;C:\AnacondaPython;C:\AnacondaPython\Scripts;C:\Program Files\Notepad++\<br
+/><br
+/>Windows can handle spaces in the paths; Linux/Unix doesn't like this, these files and directories will have to be double quoted on those OSs ( " " ).&nbsp; Don't really matter for your local path, but, if you're going to share via GitHub or other version control sysstem with *nix users, avoid spaces in your naming structure<br
+/><br
+/>github site: <a href="https://github.com/swcarpentry/2014-04-14-wise/blob/students/intermediate/git/01-gitlocal.md">https://github.com/swcarpentry/2014-04-14-wise/blob/students/intermediate/git/01-gitlocal.md</a><br
+/><br
+/><b>Practice:</b><br
+/><br
+/>- modify mars.txt<br
+/>- check your changes<br
+/>- stage changes<br
+/>- check status<br
+/>- commit<br
+/><br
+/><b>Note: </b>If you do `git checkout [hash]` without specifying a filename, you will be in a 'detatched HEAD' state. You can get back to the default branch with `git checkout master`<br
+/><br
+/><br
+/><b>Collabroating with git</b><br
+/><br
+/>Create a github account on <a href="https://github.com">https://github.com</a>.<br
+/>Create a new repository at <a href="https://github.com/new">https://github.com/new</a><br
+/>Link your local repository with the one on Github with:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git remote add origin <a href="https://github.com/yourgithubuser/planets.git">https://github.com/yourgithubuser/planets.git</a><br
+/><br
+/>And push your changes to GitHub:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git push -u origin master<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;<br
+/>Note: the `-u origin master` tells your branch to 'track' the remote branch origin/master. This means you can do just `git push` in the future, without the extra arguments.<br
+/><br
+/><b>Cloning remote repos</b><br
+/><br
+/>cd to a new location, e.g. ~/swcarpentry/alternate_planets<br
+/><br
+/>&nbsp;&nbsp;&nbsp; mkdir ~/swcarpentry/alternate_planets<br
+/>&nbsp;&nbsp;&nbsp; cd&nbsp; ~/swcarpentry/alternate_planets<br
+/><br
+/>clone your repo, so you have another local copy:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git clone <a href="https://github.com/yourgithubuser/planets.git">https://github.com/yourgithubuser/planets.git</a><br
+/>&nbsp;&nbsp;&nbsp; cd planets<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;<br
+/>In your new planets repo, edit `pluto.txt`, and make a new commit.<br
+/><br
+/><br
+/>Go to:<br
+/><a href="https://github.com/rachelslaybaugh/JellyBeanCode">https://github.com/rachelslaybaugh/JellyBeanCode</a><br
+/><br
+/>Push the fork button on github<br
+/><br
+/>This puts you in your github account with a copy of JellyBeanCode.&nbsp;<br
+/>Copy the url from the bottom right hand box<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git clone <a href="https://github.com/abostroem/JellyBeanCode.git">https://github.com/abostroem/JellyBeanCode.git</a>&nbsp; (but with your url)<br
+/>&nbsp;&nbsp;&nbsp; cd JellyBeanCode<br
+/><br
+/>Forking a code makes a copy of Rachel's remote JBC repository on your account. You can now clone your version of the JBC repository to make a local copy. You can commit, push and pull to/from your copy of Rachel's JBC but you can't contribute changes back to Rachel's copy of JBC (without a pull request)<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git remote add upstream <a href="https://github.com/rachelslaybaugh/JellyBeanCode.git">https://github.com/rachelslaybaugh/JellyBeanCode.git</a><br
+/><br
+/>Pull changes from the upstream repo:<br
+/><br
+/>&nbsp;&nbsp;&nbsp; git pull upstream master<br
+/><br
+/><br
+/><br
+/><b>Python</b><br
+/><br
+/>cd to 2014-04-14-wise<br
+/><br
+/>&nbsp;&nbsp;&nbsp; cd intermediate/python<br
+/>&nbsp;&nbsp;&nbsp; ipython notebook 01-intro-student_notebook.ipynb<br
+/><br
+/>ofile = open('mosquito_data_A1.csv','r')<br
+/>print ofile.read()<br
+/><br
+/>import numpy as np<br
+/><br
+/>np.genfromtxt('mosquito_data_A1.csv',unpack=True,skiprows=1,delimiter=',')<br
+/><br
+/>year, temperatore, rainfall, mosquitos = np.genfromtxt('mosquito_data_A1.csv',unpack=True,skiprows=1,delimiter=',')<br
+/>mean_temp = temperature.mean()<br
+/>for temp in temperature:<br
+/>&nbsp;&nbsp;&nbsp; if temp &gt; mean_temp:<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print 'temp is less than mean'<br
+/>&nbsp;&nbsp;&nbsp; elif temp &gt; mean_temp:<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print 'temp is greater than mean'<br
+/>&nbsp;&nbsp;&nbsp; else:<br
+/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print 'temp is mean'<br
+/><br
+/>To print the temp and the mean, use string formatting:<br
+/><br
+/>print('temp {} is greater than mean'.format(temp))<br
+/>print('temp {0} is greater than mean {1}'.format(temp, mean_temp))<br
+/><br
+/><br
+/></body>
+</html>
