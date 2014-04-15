@@ -1,6 +1,6 @@
 ---
 layout: lesson
-root: ../..
+root: ../../..
 title: Testing Software
 ---
 **Based on materials by Katy Huff, Rachel Slaybaugh, and Anthony Scopatz**
