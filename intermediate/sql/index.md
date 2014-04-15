@@ -317,4 +317,15 @@ relationships between them. You can explore constraints and foreign
 keys if you want the database to perform checks for you.
 
 
+# Where to go from here
+
+Sqlite will work for small to medium amounts of data. For larger amounts,
+MySQL and Postgres (especially Postgres) will handle orders of magnitude
+more. When your data grows and queries get slow, it's time to think
+about indexing. Stick with what's simplest while it works, then research
+further.
+
+SQL is cool because there are few differences in querying between
+different databases. And because you can tell the database what you
+want, and let it decide how to dig around and come up with the answer.
 
