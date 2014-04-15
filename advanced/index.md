@@ -149,8 +149,7 @@ level: advanced
     <td> 3:30-4:30      </td>
     <td> Plotting            </td>
     <td> <a
-    href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/matplotlib_master.ipynb?create=1">Science
-    in Python</a>      </td>
+    href="http://nbviewer.ipython.org/urls/raw.githubusercontent.com/swcarpentry/2014-04-14-wise/gh-pages/advanced/python/matplotlib_master.ipynb?create=1">Plotting</a>      </td>
     <td> Azalee Bostroem</td>
 </tr>
 <tr>
