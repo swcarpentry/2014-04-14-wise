@@ -1,11 +1,13 @@
-# Testing
-
-* * * * *
+---
+layout: lesson
+root: ../..
+title: Testing
+level: advanced
+---
 
 **Based on materials by Katy Huff, Rachel Slaybaugh, and Anthony
 Scopatz**
 
-![image](https://github.com/thehackerwithin/UofCSCBC2012/raw/scopz/5-Testing/test_prod.jpg)
 # What is testing?
 
 Software testing is a process by which one or more expected behaviors
@@ -56,16 +58,16 @@ random numbers, eg Monte Carlo methods.
 
 Say we have an averaging function:
 
-```python
+~~~
 def mean(numlist):
     total = sum(numlist)
     length = len(numlist)
     return total/length
-```
+~~~
 
 Tests could be implemented as runtime **exceptions in the function**:
 
-```python
+~~~
 def mean(numlist):
     try:
         total = sum(numlist)
@@ -75,12 +77,12 @@ def mean(numlist):
     except:
         print "There was a problem evaluating the number list."
     return total/length
-```
+~~~
 
 Sometimes tests they are functions alongside the function definitions
 they are testing.
 
-```python
+~~~
 def mean(numlist):
     try:
         total = sum(numlist)
@@ -101,11 +103,11 @@ def test_mean():
 
 def test_floating_mean():
     assert mean([1, 2]) == 1.5
-```
+~~~
 
 Sometimes they are in an executable independent of the main executable.
 
-```python
+~~~
 def mean(numlist):
     try:
         total = sum(numlist)
@@ -115,11 +117,11 @@ def mean(numlist):
     except:
         print "There was a problem evaluating the number list."
     return total/length
-```
+~~~
 
 Where, in a different file exists a test module:
 
-```python
+~~~
 import mean
 
 def test_mean():
@@ -131,7 +133,7 @@ def test_mean():
 
 def test_floating_mean():
     assert mean([1, 2]) == 1.5
-```
+~~~
 
 # When should we test?
 
@@ -248,17 +250,17 @@ function.
 **The Big Picture:** Putting all this together, the testing algorithm is
 often:
 
-```python
+~~~
 setup()
 test()
 teardown()
-```
+~~~
 
 But, sometimes it's the case that your tests change the fixtures. If so,
 it's better for the setup() and teardown() functions to occur on either
 side of each test. In that case, the testing algorithm should be:
 
-```python
+~~~
 setup()
 test1()
 teardown()
@@ -270,7 +272,7 @@ teardown()
 setup()
 test3()
 teardown()
-```
+~~~
 
 * * * * *
 
@@ -295,15 +297,15 @@ expression.)
 
 To write a nose test, we make assertions.
 
-```python
+~~~
 assert should_be_true()
 assert not should_not_be_true()
-```
+~~~
 
 Additionally, nose itself defines number of assert functions which can
 be used to test more specific aspects of the code base.
 
-```python
+~~~
 from nose.tools import *
 
 assert_equal(a, b)
@@ -313,17 +315,17 @@ assert_false(a)
 assert_raises(exception, func, *args, **kwargs)
 assert_is_instance(a, b)
 # and many more!
-```
+~~~
 
 Moreover, numpy offers similar testing functions for arrays:
 
-```python
+~~~
 from numpy.testing import *
 
 assert_array_equal(a, b)
 assert_array_almost_equal(a, b)
 # etc.
-```
+~~~
 
 ## Exercise: Writing tests for mean()
 
@@ -363,7 +365,7 @@ Say you want to write a fib() function which generates values of the
 Fibonacci sequence of given indexes. You would - of course - start by
 writing the test, possibly testing a single value:
 
-```python
+~~~
 from nose.tools import assert_equal
 
 from pisa import fib
@@ -372,20 +374,20 @@ def test_fib1():
     obs = fib(2)
     exp = 1
     assert_equal(obs, exp)
-```
+~~~
 
 You would *then* go ahead and write the actual function:
 
-```python
+~~~
 def fib(n):
     # you snarky so-and-so
     return 1
-```
+~~~
 
 And that is it right?! Well, not quite. This implementation fails for
 most other values. Adding tests we see that:
 
-```python
+~~~
 def test_fib1():
     obs = fib(2)
     exp = 1
@@ -400,23 +402,23 @@ def test_fib2():
     obs = fib(1)
     exp = 1
     assert_equal(obs, exp)
-```
+~~~
 
 This extra test now requires that we bother to implement at least the
 initial values:
 
-```python
+~~~
 def fib(n):
     # a little better
     if n == 0 or n == 1:
         return n
     return 1
-```
+~~~
 
 However, this function still falls over for `2 < n`. Time for more
 tests!
 
-```python
+~~~
 def test_fib1():
     obs = fib(2)
     exp = 1
@@ -441,25 +443,25 @@ def test_fib3():
     obs = fib(6)
     exp = 8
     assert_equal(obs, exp)
-```
+~~~
 
 At this point, we had better go ahead and try do the right thing...
 
-```python
+~~~
 def fib(n):
     # finally, some math
     if n == 0 or n == 1:
         return n
     else:
         return fib(n - 1) + fib(n - 2)
-```
+~~~
 
 Here it becomes very tempting to take an extended coffee break or
 possibly a power lunch. But then you remember those pesky negative
 numbers and floats. Perhaps the right thing to do here is to just be
 undefined.
 
-```python
+~~~
 def test_fib1():
     obs = fib(2)
     exp = 1
@@ -494,12 +496,12 @@ def test_fib3():
     obs = fib(-9000)
     exp = NotImplemented
     assert_equal(obs, exp)
-```
+~~~
 
 This means that it is time to add the appropriate case to the function
 itself:
 
-```python
+~~~
 def fib(n):
     # sequence and you shall find
     if n < 0 or int(n) != n:
@@ -508,7 +510,7 @@ def fib(n):
         return n
     else:
         return fib(n - 1) + fib(n - 2)
-```
+~~~
 
 # Quality Assurance Exercise
 
@@ -538,13 +540,13 @@ file which tests the closest\_data\_to\_line() functions.
 is some sample data to help you get started.
 
 ![image](https://github.com/thehackerwithin/UofCSCBC2012/raw/scopz/5-Testing/evo_sol1.png)
-> -
 
-```python
+
+~~~
 import numpy as np
 
 p1 = np.array([0.0, 0.0])
 p2 = np.array([1.0, 1.0])
 data = np.array([[0.3, 0.6], [0.25, 0.5], [1.0, 0.75]])
-```
+~~~
 
