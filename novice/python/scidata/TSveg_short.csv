@@ -1,0 +1,10 @@
+East,North,Year,Season,Date,Transect,Quad,DIST.,Water Depth,Spp,Common Name,Scientific Name,Percent,Height,Density,Obs,Comments
+549717,4219841,2002,Summer,8/23/2002,1,1,6,,RASA,Common wild radish,Raphanus sativus,25,34,1,CR;SD,
+549717,4219841,2002,Summer,8/23/2002,1,7,21,,BARE,bare ground,N/A,35,,,CR;SD,
+549717,4219841,2002,Summer,8/23/2002,1,8,24,54,SAVI,Pickleweed,Salicornia virginica,25,33,50,CR;SD,
+549526,4219628,2002,Summer,8/23/2002,3A,3,6,,ATTR,Fat hen,Atriplex triangularis,60,24,2,CR;SD,
+549526,4219628,2002,Summer,8/23/2002,3A,3,6,,BARE,bare ground,N/A,40,,,CR;SD,
+549716,4219834,2003,SPRING,5/16/2003,1A,9,24,2,BARE,bare ground,N/A,15,,1A,AW ; CR,
+549716,4219834,2003,SPRING,5/16/2003,1A,10,27,,SAVI,Pickleweed,Salicornia virginica,15,34,1A,AW ; CR,
+549909,4219899,2003,Summer,8/27/2003,2A,13,36,,SAVI,Pickleweed,Salicornia virginica,1,8,2,AW ; CR,
+549909,4219899,2003,Summer,8/27/2003,2A,14,39,,MF,mudflat,N/A,100,,,AW ; CR,

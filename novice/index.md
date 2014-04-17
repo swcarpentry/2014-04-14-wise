@@ -140,7 +140,7 @@ level: novice
 </tr>
 <tr>
     <td> 4:30-5:00      </td>
-    <td>  Questions</td>
+    <td> <a href="https://docs.google.com/forms/d/1GcdH1dH05b45Cemj339ipN3TKndvwBoJY1sQLMwkgt0/viewform">Survey</a>     </td>
     <td> <a href="{{ site.github.url }}/novice_room.html">54-130</a>      </td>
     <td> All </td>
 </tr>

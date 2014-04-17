@@ -1,0 +1,11 @@
+# script to take a select out small sections of a csv
+# made for shortening csv files to be used as 
+# examples for software carpentry
+# lbl April 2014
+# suzanne kiihne
+
+    head -2 $1 
+    head -20 $1 | tail -2
+    head -50 $1 | tail -2
+    head -100 $1 | tail -2
+    head -300 $1 | tail -2
