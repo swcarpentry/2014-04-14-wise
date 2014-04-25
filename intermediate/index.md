@@ -135,7 +135,7 @@ level: intermediate
     <td> 2:45-4:30      </td>
     <td> SQL                 </td>
     <td> <a
-    href="http://software-carpentry.org/v4/databases/index.html">Database</a> </td>
+    href="sql/index.html">Database</a> </td>
     <td> Jessica Kerr </td>
 </tr>
 <tr>
