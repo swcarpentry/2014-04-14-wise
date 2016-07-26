@@ -127,37 +127,54 @@ print my_object.name
 
 Write an Atom class with mass and velocity attributes and an energy() method.
 
-In[6]:
+In[8]:
 
 ```
-# Atom class with mass and velocity attributes and an energy method.
+# Atom class with mass and velocity attributes and an energy method
 
 class Atom(object):
     
     # Setup function takes mass in amu and velocity in m/s
-    def properties(self, m, v):
+    def set_properties(self, m, v):
         self.mass = m * 1.66053892e-27 # convert mass from amu to kg
         self.velocity = v
-               
-    # Return kinetic energy in Joules
-    def energy(self):
+        
+    # Function to calculation kinetic energy
+    def calc_energy(self):
+        
         self.energy = 0.5 * self.mass * self.velocity**2
-        return self.energy
 
 ```
 
 Let's try it out!
 
-In[7]:
+In[10]:
 
 ```
 atom = Atom()
 print "atom is of type", type(atom)
 
-atom.properties(12,2e7)
+# Set and check properties of atom
+atom.set_properties(12, 2e7)
 print "\nMass in kg", atom.mass
 print "\nVelocity in m/s", atom.velocity
-print "\nEnergy in Joules", atom.energy()
+atom.calc_energy()
+print "\nEnergy in Joules", atom.energy
+
+# Reset and check properties of atom
+atom.set_properties(15, 2e27)
+print "\n\n\nMass in kg", atom.mass
+print "\nVelocity in m/s", atom.velocity
+atom.calc_energy()
+print "\nEnergy in Joules", atom.energy
+
+# Get a new Atom and compare 
+beta = Atom()
+beta.set_properties(235, 1e6)
+print atom.mass
+print beta.mass
+print atom.velocity
+print beta.velocity
 ```
 
 
@@ -168,6 +185,54 @@ print "\nEnergy in Joules", atom.energy()
     Velocity in m/s 20000000.0
     
     Energy in Joules 3.985293408e-12
+    
+    
+    
+    Mass in kg 2.49080838e-26
+    
+    Velocity in m/s 2e+27
+    
+    Energy in Joules 4.98161676e+28
+    2.49080838e-26
+    3.902266462e-25
+    2e+27
+    1000000.0
+
+
+In[23]:
+
+```
+class Parallelpipied(object):
+    
+    def __init__(self, h, w, l):
+    
+        self.height = h
+        self.width = w
+        self.length = l
+        
+    def calc_area(self):
+        
+        self.area = self.height * self.width
+        
+    def calc_volume(self):
+        
+        self.volume = self.height * self.width * self.length
+```
+
+In[24]:
+
+```
+my_shape = Parallelpipied(1.0, 2.0 ,3.0)
+my_shape.calc_area()
+print my_shape.area
+
+my_shape.calc_volume()
+print my_shape.volume
+```
+
+
+    2.0
+    6.0
 
 
 ## Programatic Attribute Access
@@ -177,14 +242,14 @@ Python provides three built-in functions, `getattr()`, `setattr()`, and
 object and the string name of the attribute to be accessed.  This is instead of
 using dot-access.
 
-In[8]:
+In[11]:
 
 ```
 class A(object):
     a = 1
 ```
 
-In[9]:
+In[12]:
 
 ```
 avar = A()
@@ -198,7 +263,7 @@ getattr(avar, 'a')
 
 
 
-In[10]:
+In[13]:
 
 ```
 setattr(avar, 'q', 'mon')
@@ -216,7 +281,7 @@ things. Perhaps an object needs certain information to be created. For
 this you write a **constructor**. In python, constructors are just methods
 with the special name ``__init__()``:
 
-In[11]:
+In[14]:
 
 ```
 class Person(object):
@@ -224,7 +289,7 @@ class Person(object):
         self.name = "Rachel"
 ```
 
-In[12]:
+In[15]:
 
 ```
 person = Person()
@@ -237,7 +302,7 @@ print person.name
 
 Constructors may take arguements just like any other method or function.
 
-In[13]:
+In[16]:
 
 ```
 class Person(object):
@@ -246,7 +311,7 @@ class Person(object):
         self.title = title
 ```
 
-In[14]:
+In[17]:
 
 ```
 rachel = Person("Rachel")
@@ -257,7 +322,7 @@ print rachel.name, rachel.title
     Rachel The Best
 
 
-In[15]:
+In[18]:
 
 ```
 azalee = Person("Azalee", "The Greatest")
@@ -270,7 +335,7 @@ print azalee.name, azalee.title
 
 Here is a more complex and realisitic example of a matrix class:
 
-In[16]:
+In[19]:
 
 ```
 # Matrix defines a real, 2-d matrix.
@@ -350,7 +415,7 @@ For example, let's say you want to write a sparse matrix class, which
 means that you don't explicitly store zero elements. You can create a
 subclass of the Matrix class that redefines the matrix operations.
 
-In[17]:
+In[20]:
 
 ```
 class SparseMatrix(Matrix):
@@ -384,7 +449,7 @@ The SparseMatrix object is a Matrix but some methods are defined in the
 *superclass* Matrix.  You can see this by looking at the dir of the SparseMatrix
 and noting that it gets attributes from Matrix.
 
-In[18]:
+In[21]:
 
 ```
 dir(SparseMatrix) 
@@ -425,7 +490,7 @@ dir(SparseMatrix)
 
 A more minimal and more abstact version of inheritence may be seen here:
 
-In[19]:
+In[22]:
 
 ```
 class A(object):
@@ -445,6 +510,12 @@ print x.a, x.b, x.c
 
     1 42 3
 
+
+In[22]:
+
+```
+
+```
 
 In[ ]:
 
